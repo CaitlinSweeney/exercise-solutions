@@ -1,0 +1,52 @@
+html {
+	/* fix for background gradient */
+	min-height: 100%;
+}
+
+body {
+	background: #333;
+	background: linear-gradient(to bottom, #666, #333);
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+.iphone-icon {
+	width: 112px;
+	height: 112px;
+	border-radius: 15px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -56px;
+	margin-top: -56px;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+	cursor: default;
+}
+
+.iphone-icon .icon-calendar {
+	background: #FAFAFA;
+	position: relative;
+}
+
+.iphone-icon .icon-calendar .day {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 28px;
+	height: 28px;
+	color: #FFF;
+	text-align: center;
+	background: linear-gradient(to bottom, #e2a2a2 0%, #bc3535 98%, #982727 99%, #711616 99.5%, #4f2d2d 100%);
+	box-shadow: 0px 0px 5px 7px #333;
+	text-shadow: rgba(0,0,0,0.2) 0 2px 0;
+}
+
+.iphone-icon .icon-calendar .day-num {
+	font-size: 75px;
+	line-height: 84px;
+	font-weight: bold;
+	text-align: center;
+	box-shadow: inset rgba(0,0,0,0.3) 0 0 20px
+}
