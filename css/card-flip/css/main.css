@@ -1,23 +1,18 @@
-/*
-	Card flip styles
-*/
-
-#portfolio .portfolio-item .primary,
-#portfolio .portfolio-item .secondary {
+.primary {
 	position: absolute;
-	transition: all 0.5s ease-in-out;
+	transition: -webkit-transform 1s;
 }
 
-#portfolio .portfolio-item .primary {
-	-webkit-transform: rotateY(0deg);
-}
-#portfolio .portfolio-item .secondary {
+.secondary {
+	transition: -webkit-transform 1s;
 	-webkit-transform: rotateY(-180deg);
 }
 
-#portfolio .portfolio-item:hover .primary {
+.portfolio-item:hover .secondary {
+	-webkit-transform: rotateY(0);
+}
+
+.portfolio-item:hover .primary {
 	-webkit-transform: rotateY(180deg);
 }
-#portfolio .portfolio-item:hover .secondary {
-	-webkit-transform: rotateY(0deg);
-}
+

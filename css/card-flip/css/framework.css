@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	padding: 40px;
-	background: #EFEFEF;
+	background-color: #EFEFEF;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 }
@@ -14,33 +14,31 @@ body {
 	margin: 0;
 }
 
-#portfolio .portfolio-item {
-	display: block;
+.portfolio-item {
 	float: left;
-	width: 200px;
-	height: 200px;
 	-webkit-perspective: 600px;
 	margin: 10px;
 }
 
-#portfolio .portfolio-item .primary,
-#portfolio .portfolio-item .secondary {
-	display: block;
+.primary, .secondary {
 	width: 200px;
 	height: 200px;
 	background: #CCC;
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 	border-radius: 10px;
+}
+
+.primary {
 	overflow: hidden;
 }
 
-#portfolio .portfolio-item .secondary {
+.secondary {
 	padding: 20px;
 	width: 160px;
 	height: 160px;
 }
 
-#portfolio .portfolio-item .secondary h2 {
+.secondary h2 {
 	margin-top: 0px;
 }
