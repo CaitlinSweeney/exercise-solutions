@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Modularity</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+  	<div class="instructions-container">
+
+  		<ol class="instruction-list" start="14">
+        <li>
+          <h1 class="instruction-title">Signup Form</h1>
+
+          <p class="instruction-text">Style a form so that labels are right-aligned against the field, and fields stack vertically.</p>
+          <div class="instruction-answer">
+            <!-- Edit here -->
+            <form>
+              <div class="form-field-group">
+                <label class="form-field-label">First Name</label>
+                <input class="form-field" type="text" name="firstName">
+              </div>
+              <div class="form-field-group">
+                <label class="form-field-label">Last Name</label>
+                <input class="form-field" type="text" name="lastName">
+              </div>
+              <div class="form-field-group">
+                <label class="form-field-label">Email</label>
+                <input class="form-field" type="email" name="email">
+              </div>
+            </form>
+            <!-- End editable area -->
+          </div>
+
+          <p class="instruction-text">Should work for some more complicated forms...</p>
+          <div class="instruction-answer">
+            <!-- Edit here -->
+            <form>
+              <div class="form-field-group">
+                <label class="form-field-label">First Name</label>
+                <input class="form-field" type="text" name="firstName">
+              </div>
+              <div class="form-field-group">
+                <label class="form-field-label">Last Name</label>
+                <input class="form-field" type="text" name="lastName">
+              </div>
+              <div class="form-field-group">
+                <label class="form-field-label">Email</label>
+                <input class="form-field" type="email" name="email">
+              </div>
+              <div class="form-field-group">
+                <label class="form-field-label">City</label>
+                <input class="form-field text-medium" type="text" name="city">
+                <label class="form-field-inline-label">State</label>
+                <input class="form-field text-small" type="text" name="state">
+              </div>
+              <div class="form-field-group">
+                <div class="form-field-offset">
+                  <label><input type="checkbox">Sign up for the newsletter</label>
+                </div>
+              </div>
+              <div class="form-field-group">
+                <div class="form-field-offset">
+                  <input class="form-field button1" type="submit">
+                </div>
+              </div>
+            </form>
+            <!-- End editable area -->
+          </div>
+        </li>
+
+        <li>
+          <h1 class="instruction-title">Form Validation</h1>
+
+          <p class="instruction-text">Create styles for validated inputs and validation messages.</p>
+          <div class="instruction-answer">
+            <!-- Edit here -->
+            <form>
+              <div class="form-field-group">
+                <label class="form-field-label">First Name</label>
+                <input type="text" name="firstName" value="Pascal" class="form-field field-is-valid">
+                <span class="is-valid">✓</span>
+              </div>
+              <div class="form-field-group">
+                <label class="form-field-label">Last Name</label>
+                <input class="form-field" type="text" name="lastName">
+              </div>
+              <div class="form-field-group">
+                <label class="form-field-label">Email</label>
+                <input type="email" name="email" value="myemail@something" class="form-field field-is-invalid">
+                <span class="is-invalid">Please enter a valid value.</span>
+              </div>
+            </form>
+            <!-- End editable area -->
+          </div>
+        </li>
+
+        <li>
+          <h1 class="instruction-title">Search Bar</h1>
+
+          <p class="instruction-text">The textbox should be fluid, i.e. stretch to fit the available space when the window changes size. <em>Hint: Look up 3-column layouts with fluid center.</em></p>
+          <div class="instruction-answer">
+            <!-- Edit here -->
+            <div class="search-bar column-bar">
+              <label class="bar-left search-bar-label">Find groups</label>
+              <div class="bar-center">
+                <input class="bar-fill form-field" placeholder="Find Groups by Title or Description">
+              </div>
+              <input class="bar-right button button-small" type="submit">
+            </div>
+            <!-- End editable area -->
+          </div>
+        </li>
+
+        <li>
+          <h1 class="instruction-title">Omnibox</h1>
+
+          <p class="instruction-text">Create a textbox which can display multiple "tags" as there are entered.</p>
+          <div class="instruction-answer">
+            <!-- Edit here -->
+            <div class="omnibox">
+              <ul class="omnibox-tags"><li class="omnibox-item"><a class="control" href="#">x</a>Date: Yesterday</li><li class="omnibox-item"><a class="control" href="#">x</a>Label: Notes</li></ul>
+              <input class="form-field text-large omnibox-input" type="text" placeholder="Enter more terms">
+            </div>
+            <!-- End editable area -->
+          </div>
+        </li>
+
+        <li>
+          <h1 class="instruction-title">Chunky List</h1>
+
+          <p class="instruction-text">Create a list of items that have multiple pieces of data per row, including an icon, title, description, and favorited count.</p>
+          <div class="instruction-answer">
+            <!-- Edit here -->
+            <div class="chunky-list">
+              <div class="chunky-list-header">
+                <h3 class="chunky-list-title">Public repositories</h3>
+              </div>
+              <ul class="chunky-list-items">
+                <li class="chunky-list-item" >
+                  <a href="http://github.com/visionmedia/express" target="_blank">
+                    <div class="media-block">
+                      <div class="favorited">9,972</div>
+                      <div class="media-object">
+                        <div class="repo-icon"></div>
+                      </div>
+                      <div>
+                        <div class="repo-title">express</div>
+                        <p class="repo-description truncate" title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="chunky-list-item">
+                  <a href="http://github.com/visionmedia/jade" target="_blank">
+                    <div class="media-block">
+                      <div class="favorited">4,854</div>
+                      <div class="media-object">
+                        <div class="repo-icon"></div>
+                      </div>
+                      <div>
+                        <div class="repo-title">jade</div>
+                        <p class="repo-description truncate" title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="chunky-list-item" >
+                  <a href="http://github.com/visionmedia/mocha" target="_blank">
+                    <div class="media-block">
+                      <div class="favorited">2,954</div>
+                      <div class="media-object">
+                        <div class="repo-icon"></div>
+                      </div>
+                      <div>
+                        <div class="repo-title">mocha</div>
+                        <p class="repo-description truncate" title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="chunky-list-item" >
+                  <a href="http://github.com/visionmedia/get-extras" target="_blank">
+                    <div class="media-block">
+                      <div class="favorited">2,342k</div>
+                      <div class="media-object">
+                        <div class="repo-icon"></div>
+                      </div>
+                      <div>
+                        <div class="repo-title">git-extras</div>
+                        <p class="repo-description truncate" title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="chunky-list-item" >
+                  <a href="http://github.com/visionmedia/uikit" target="_blank">
+                    <div class="media-block">
+                      <div class="favorited">1,183</div>
+                      <div class="media-object">
+                        <div class="repo-icon"></div>
+                      </div>
+                      <div>
+                        <div class="repo-title">uikit</div>
+                        <p class="repo-description truncate" title="modern ui components for the modern web">modern ui components for the modern web</p>
+                      </div>
+                    </div>
+                  </a>
+              </ul>
+            </div>
+<!--jade 4,845 
+Jade - robust, elegant, feature rich template engine for nodejs
+mocha 2,954 
+mocha - simple, flexible, fun javascript test framework for node.js & the browser. (BDD, TDD, QUnit styles via interfaces)
+git-extras 2,342 
+GIT utilities -- repo summary, repl, changelog population, author commit percentages and more
+uikit 1,183 
+UIKit - modern ui components for the modern web-->
+            <!-- End editable area -->
+          </div>
+
+          <p class="instruction-text">What if we used a table for the markup instead? Style it the same as above. You should be able to use <em>nearly 100%</em> of the same classes.</p>
+          <div class="instruction-answer">
+            <!-- Edit here -->
+            <table class="chunky-list">
+              <thead>
+                <tr>
+                  <th class="chunky-list-header">
+                    <h3 class="chunky-list-title">Public repositories</h3>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr class="chunky-list-item" >
+                  <td>
+                    <a href="http://github.com/visionmedia/express" target="_blank">
+                      <div class="media-block">
+                        <div class="favorited">9,972</div>
+                        <div class="media-object">
+                          <div class="repo-icon"></div>
+                        </div>
+                        <div>
+                          <div class="repo-title">express</div>
+                          <p class="repo-description truncate" title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="chunky-list-item" >
+                  <td>
+                    <a href="http://github.com/visionmedia/jade" target="_blank">
+                      <div class="media-block">
+                        <div class="favorited">4,854</div>
+                        <div class="media-object">
+                          <div class="repo-icon"></div>
+                        </div>
+                        <div>
+                          <div class="repo-title">jade</div>
+                          <p class="repo-description truncate" title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="chunky-list-item" >
+                  <td>
+                    <a href="http://github.com/visionmedia/mocha" target="_blank">
+                      <div class="media-block">
+                        <div class="favorited">2,954</div>
+                        <div class="media-object">
+                          <div class="repo-icon"></div>
+                        </div>
+                        <div>
+                          <div class="repo-title">mocha</div>
+                          <p class="repo-description truncate" title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="chunky-list-item" >
+                  <td>
+                    <a href="http://github.com/visionmedia/get-extras" target="_blank">
+                      <div class="media-block">
+                        <div class="favorited">2,342k</div>
+                        <div class="media-object">
+                          <div class="repo-icon"></div>
+                        </div>
+                        <div>
+                          <div class="repo-title">git-extras</div>
+                          <p class="repo-description truncate" title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="chunky-list-item" >
+                  <td>
+                    <a href="http://github.com/visionmedia/uikit" target="_blank">
+                      <div class="media-block">
+                        <div class="favorited">1,183</div>
+                        <div class="media-object">
+                          <div class="repo-icon"></div>
+                        </div>
+                        <div>
+                          <div class="repo-title">uikit</div>
+                          <p class="repo-description truncate" title="modern ui components for the modern web">modern ui components for the modern web</p>
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            <!-- End editable area -->
+          </div>
+        </li>
+
+			</ol>
+
+		</div>
+	</body>
+</html>
