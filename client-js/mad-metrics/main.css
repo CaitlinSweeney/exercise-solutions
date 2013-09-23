@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+.container-narrow {
+	margin: 0 auto;
+	width: 420px;
+}
+
+.fixed-upper-left {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+}
+
+.button {
+	background-color: #dab;
+	padding: 20px 18px;
+	font-family: "Helvetica Nueue";
+	font-weight: 200;
+	font-size: 28px;
+	color: #355;
+	text-decoration: none;
+	line-height: 74px;
+}
+
+.highlight {
+	background-color: rgba(0, 0, 255, 0.2);
+}
