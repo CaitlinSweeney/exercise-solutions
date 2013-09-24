@@ -1,8 +1,8 @@
 var phone = prompt('Please enter your phone number with dashes:');
-alert(phone.charAt(3) === '-' && phone.charAt(7) === "-");
+alert(phone.charAt(3) === '-' && phone.charAt(7) === "-" && phone.length === 12);
 
 var birthdate = prompt('Please enter your birth date in the format mm/dd/yy:');
-alert(birthdate.charAt(2) === '/' && birthdate.charAt(5) === "/");
+alert(birthdate.charAt(2) === '/' && birthdate.charAt(5) === "/" && birthdate.length === 8);
 
 var postal = prompt('Please enter your postal code:');
 alert(postal.length === 5 || postal.length === 10 && postal.charAt(5) === '-');
