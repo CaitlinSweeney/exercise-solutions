@@ -14,9 +14,7 @@ if (!String.prototype.supplant) {
 
 /* Rounds a number to the given decimel place. */
 var roundToPlace = function(n, place) {
-	if(place == undefined) {
-		place = 0;
-	}
+	place = place || 0;
 	var multiplier = Math.pow(10, place);
 	return Math.round(n * multiplier) / multiplier;
 };
@@ -37,9 +35,24 @@ var formatObj = function(o, valueFormatter) {
 	return s;
 };
 
+/** Same as above. */
+/*var formatObj2 = function(o, valueFormatter) {
+	var s = "";
+	for(var key in o) {
+		if(valueFormatter === undefined) {
+			s += "  {0}: {1}\n".supplant([key, o[key]]);
+		}
+		else {
+			s += "  {0}: {1}\n".supplant([key, valueFormatter(o[key])]);
+		}
+	}
+	return s;
+};
+*/
+
 /** Returns the element closest to the given y offset. */
 var getClosestTo = function(els, y) {
-	var closest = $(this);
+	var closest;
 	var closestDist = Infinity;
 
 	els.each(function() {
