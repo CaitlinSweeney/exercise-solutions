@@ -1,0 +1,39 @@
+body {
+	margin: 50px;
+}
+
+.quote {
+	margin-bottom: 4em;
+	clear: left;
+}
+
+.quote-text {
+	font-weight: 200;
+	font-size: 2em;
+}
+
+.quote-author {
+	font-size: 1.5em;
+	color: #888;
+}
+
+.quote-rating {
+	float: left;
+}
+
+.quote-delete {
+	margin-left: 1em;
+	float: left;
+}
+
+.quote-controls {
+	opacity: 0.3;
+	margin-top: 0.5em;
+	float: left;
+	overflow: auto;
+}
+
+.quote-controls:hover {
+	opacity: 1;
+}
+
