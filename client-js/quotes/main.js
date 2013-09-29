@@ -134,7 +134,7 @@ $(function() {
 	};
 
 
-	// INITIALIZATION
+	// DATA
 	var getQuoteData = function() {
 		var quotes = [
 			{
