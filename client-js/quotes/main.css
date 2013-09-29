@@ -2,9 +2,8 @@ body {
 	margin: 50px;
 }
 
-.quote {
+li .quote {
 	margin-bottom: 4em;
-	clear: left;
 }
 
 .quote-text {
@@ -27,13 +26,31 @@ body {
 }
 
 .quote-controls {
-	opacity: 0.3;
 	margin-top: 0.5em;
 	float: left;
 	overflow: auto;
+}
+
+@media (min-width:992px) {
+	.quote-controls {
+		opacity: 0.3;
+	}
 }
 
 .quote-controls:hover {
 	opacity: 1;
 }
 
+.animate-left {
+	-webkit-transition: all 0.5s 0.25s;
+}
+
+.animate-left-collapsed {
+	-webkit-transform: translate(-120%);
+	-webkit-transition: all 0.5s;
+}
+
+#author-shown {
+	position: absolute;
+	width: 100%;
+}
