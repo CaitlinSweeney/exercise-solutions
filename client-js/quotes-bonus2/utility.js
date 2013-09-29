@@ -1,10 +1,33 @@
+/** Returns a new array of each array item transformed by the given function. */
+var map = function(arr, f) {
+	var output = [];
+	for(var i=0; i<arr.length; i++) {
+		output.push(f(arr[i], i));
+	}
+	return output;
+};
+
 /** Returns a new array that only includes elements that pass the given evaluator function. */
 var filter = function(arr, f) {
 	var output = [];
 	for(var i=0; i<arr.length; i++) {
-		if(f(arr[i])) {
+		if(f(arr[i], i)) {
 			output.push(arr[i]);
 		}
+	}
+	return output;
+};
+
+/** Generates a sequence of integers from start (inclusive) to end (exclusive). If only one
+	  argument is passed, it is treated as end and start is 0. */
+var range = function(start, end) {
+	if(end === undefined) {
+		end = start;
+		start = 0;
+	}
+	var output = [];
+	for(var i=start; i<end; i++) {
+		output.push(i);
 	}
 	return output;
 };

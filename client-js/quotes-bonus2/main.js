@@ -1,78 +1,42 @@
 $(function() {
 
-	// HTML RENDERING
+	// HTML CREATION
 	var renderQuotes = function() {
-		$("#quotes").empty().append(createQuotesList(quotes, filteredAuthor));
+		var quoteList = createQuotesList(quotes, filteredAuthor);
+		var quoteListEl = Creatable.createHtml(quoteList);
+		$("#quotes").empty().append(quoteListEl);
 	}
 
 	var createQuotesList = function(quotes, filteredAuthor) {
-		var list = $('<ul class="list-unstyled">');
-		for(var i=0; i<quotes.length; i++) {
-			if(!filteredAuthor || quotes[i].author === filteredAuthor) {
-				var quoteEl = createQuote(quotes[i], i);
-				var item = $('<li>');
-				item.append(quoteEl);
-				list.append(item);
-			}
-		}
-		return list;
-	};
-
-	var createSlimQuote = function(quote) {
-		var quoteEl = $('<div class="quote"></div>');
-		var quoteTextEl = $('<q class="quote-text">{quote}</q>'.supplant(quote));
-		var authorEl = $('<div class="quote-author"><a href="#" class="quote-author-link">-{author}</a></div>'.supplant(quote));
-
-		quoteEl.append(quoteTextEl);
-		quoteEl.append(authorEl);
-
-		return quoteEl;
+		return ['ul.list-unstyled', map(quotes, function(quote, i) {
+			return !filteredAuthor || quote.author === filteredAuthor ?
+				['li', [createQuote(quote, i)]] : null;
+		})];
 	};
 
 	var createQuote = function(quote, i) {
-		var quoteEl = $('<div class="quote clearfix" data-index="{0}"></div>'.supplant([i]));
-		var quoteControls = $('<div class="quote-controls"></div>')
-		var ratingEl = createRating(quote.rating);
-		var deleteEl = $('<a class="quote-delete btn btn-xs btn-danger">&times;</a>');
-		var quoteTextEl = $('<q class="quote-text">{quote}</q>'.supplant(quote));
-		var authorEl = $('<div class="quote-author"><a href="#" class="quote-author-link">-{author}</a></div>'.supplant(quote));
-
-		quoteEl.append(quoteTextEl);
-		quoteEl.append(authorEl);
-
-		quoteControls.append(ratingEl);
-		quoteControls.append(deleteEl);
-		quoteEl.append(quoteControls);
-
-		return quoteEl;
+		return ['.quote.clearfix', { 'data-index': i }, [
+			['q.quote-text', quote.quote],
+			['.quote-author a.quote-author-link', quote.author],
+			['.quote-controls', [
+				createRating(quote.rating),
+				['a.quote-delete.btn.btn-xs.btn-danger', '&times;']
+			]]
+		]];
 	};
 
 	var createRating = function(rating) {
-		return $(('<div class="quote-rating"><div class="btn-group btn-group-xs" data-toggle="buttons">' + 
-  		'<label class="btn btn-default{0}">' + 
-	    	'<input type="radio" name="options" id="rating1" value="1">1' + 
-	  	'</label>' + 
-	  	'<label class="btn btn-default{1}">' + 
-	    	'<input type="radio" name="options" id="rating2" value="2">2' + 
-	  	'</label>' + 
-	  	'<label class="btn btn-default{2}">' + 
-	    	'<input type="radio" name="options" id="rating3" value="3">3' + 
-	  	'</label>' + 
-	  	'<label class="btn btn-default{3}">' + 
-	    	'<input type="radio" name="options" id="rating4" value="4">4' + 
-	  	'</label>' + 
-	  	'<label class="btn btn-default{4}">' + 
-	    	'<input type="radio" name="options" id="rating5" value="5">5' + 
-	  	'</label>' + 
-		'</div></div>').supplant([
-			rating === 1 ? ' active' : '',
-			rating === 2 ? ' active' : '',
-			rating === 3 ? ' active' : '',
-			rating === 4 ? ' active' : '',
-			rating === 5 ? ' active' : ''
-		]));
+		return ['.quote-rating', [
+			['.btn-group.btn-group-xs', { 'data-toggle': 'buttons' }, map(range(1,6), function(i) {
+				return ['label.btn.btn-default' + (rating === i ? '.active' : ''), [
+					['input', { type: 'radio', name: 'options', value: i }],
+					i
+				]];
+			})]
+		]];
 	};
 
+	// DOM MANIPULATION
 	var showByAuthor = function(author) {
 		$('#author-form-group').addClass('animate-left-collapsed')
 		$('#author-shown').removeClass('animate-left-collapsed');
@@ -134,27 +98,13 @@ $(function() {
 	};
 
 
-	// INITIALIZATION
+	// DATA
 	var getQuoteData = function() {
-		var quotes = [
-			{
-				author: 'Helen Keller',
-				quote: "College isn't the place to go for ideas.",
-				rating: 4
-			},
-			{
-				author: 'George Sewell',
-				quote: 'Fear is the tax that conscience pays to guilt.',
-				rating: 2
-			},
-			{
-				author: 'Helen Keller',
-				quote: "Life is either a daring adventure or nothing. Security does not exist in nature, nor do the children of men as a whole experience it. Avoiding danger is no safer in the long run than exposure.",
-				rating: 3
-			}
-		];
+		return JSON.parse(localStorage.quotes || null);
+	};
 
-		return quotes;
+	var saveQuoteData = function() {
+		localStorage.quotes = JSON.stringify(quotes);
 	};
 
 
@@ -162,6 +112,7 @@ $(function() {
 	$('#add-quote-form').submit(function() {
 		if(validateForm()) {
 			quotes.splice(0,0,getQuote());
+			saveQuoteData();
 			renderQuotes();
 			clearQuoteForm();
 		}
@@ -177,6 +128,7 @@ $(function() {
 		var quote = $(this).parents('.quote:first')
 		var index = quote.data('index');
 		quotes.splice(index,1);
+		saveQuoteData();
 		renderQuotes();
 	});
 
@@ -185,6 +137,7 @@ $(function() {
 		var index = $(this).parents('.quote:first').data('index');
 		quotes[index].rating = +$(this).text();
 		quotes.sort(compareByReverseRating);
+		saveQuoteData();
 		renderQuotes();
 	});
 
@@ -210,7 +163,8 @@ $(function() {
 	$('#random-quote-button').on('click', function() {
 		var index = Math.floor(Math.random() * quotes.length);
 		var quote = createQuote(quotes[index], index);
-		$('#random-quote-modal .modal-body').empty().append(quote);
+		var quoteEl = Creatable.createHtml(quote);
+		$('#random-quote-modal .modal-body').empty().append(quoteEl);
 		$('#random-quote-modal').modal('show');
 	});
 
