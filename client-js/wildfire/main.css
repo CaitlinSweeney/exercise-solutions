@@ -1,0 +1,16 @@
+body {
+	margin: 50px;
+}
+
+.list-vert-stack > li {
+	padding-bottom: 10px;
+}
+
+.selected-power {
+	padding: 5px;
+	border: dashed 1px gray;
+}
+
+#land .btn {
+	width: 67px;
+}
