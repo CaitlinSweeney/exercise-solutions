@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bite-Sized Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Form: Example 1 -->
+      <div id="example-1">
+        <div class="page-header"><h1>Example 1</h1></div>
+        <form class="form-inline" id="form-example-1">
+          <div class="form-group">
+            <input type="text" id="first-name" class="form-control" placeholder="First Name...">
+          </div>
+          <div class="form-group">
+            <input type="text" id="last-name" class="form-control" placeholder="Last Name...">
+          </div>
+          <button class="btn btn-default" type="submit">Say Hello</button>
+        </form>
+        <h2 id="output"></h2>
+      </div>
+
+      <!-- Form: Example 2 -->
+      <div id="example-2">
+        <div class="page-header"><h1>Example 2</h1></div>
+        <h4>Who would you like to add?</h4>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="grouptype" value="faculty" id="faculty-radio" checked>
+            Faculty
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="grouptype" value="student" id="student-radio">
+            Student
+          </label>
+        </div>
+        <div id="form-contents" class="row">
+          <div class="col-xs-6">
+            <div id="faculty-form" class="panel panel-default">
+              <form>
+                <div class="panel-heading"><h3 class="panel-title">Add Faculty Form</h3></div>
+                <div class="panel-body">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Faculty Name" id="faculty-name">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Faculty Address">
+                    </div>
+                </div>
+                <div class="panel-footer">
+                  <button class="btn btn-primary" type="submit">Add Faculty</button>
+                </div>
+              </form>
+            </div>
+            <div id="student-form" class="panel panel-default" style="display: none;">
+              <form>
+                <div class="panel-heading"><h3 class="panel-title">Add Student Form</h3></div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Student Name" id="student-name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Student Address">
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <button class="btn btn-primary" type="submit">Add Student</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form: Example 3 -->
+      <div id="example-3">
+        <div class="page-header"><h1>Example 3</h1></div>
+        <form id="form-example-3">
+        <h4>My Favorite Colors</h4>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="colors" value="red">
+              Red
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="colors" value="blue">
+              Blue
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="colors" value="green">
+              Green
+            </label>
+          </div>
+          <h4 id="color-output">You don't like any colors!?</h4>
+        </form>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
