@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  #cityContainer
+  script#city-template(type="text/x-handlebars-template").
+    <div class='city'>
+      <h2>{{title}}</h2>
+      {{#if next}}
+      <a class='next' href='#' data-target='{{next}}'>Next</a>
+      {{/if}}
+    </div>

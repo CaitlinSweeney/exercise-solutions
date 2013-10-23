@@ -1,0 +1,25 @@
+{
+  "seville": {
+    "title": "Seville",
+    "next": "canary-islands"
+  },
+  "canary-islands": {
+    "title": "Canary Islands",
+    "next": "cape-verde"
+  },
+  "cape-verde": {
+    "title": "Cape Verde",
+    "next": "strait-of-magellan"
+  },
+  "strait-of-magellan": {
+    "title": "Strait of Magellan",
+    "next": "guam"
+  },
+  "guam": {
+    "title": "Guam",
+    "next": "philippines"
+  },
+  "philippines": {
+    "title": "Philippines"
+  }
+}
