@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	.container
+		h1 Mock Search Engine
+		input#search(placeholder="search for something")
+		#results.list-unstyled
+	link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js")
+	script(src="/javascripts/main.js")
+
+	include templates.html

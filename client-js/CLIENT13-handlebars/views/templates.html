@@ -1,0 +1,10 @@
+<script id="search-results-template" type="text/x-handlebars-template">
+
+	{{#if results.desc}}
+		<li>{{results.desc}}</li>
+	{{else}}
+		{{#each results}}
+			<li><b>{{@key}}</b> - {{desc}}</li>
+		{{/each}}
+	{{/if}}
+</script>
