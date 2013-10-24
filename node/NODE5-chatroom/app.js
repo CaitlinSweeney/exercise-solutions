@@ -29,11 +29,6 @@ if ('development' == app.get('env')) {
 
 //index route
 app.get('/', routes.index);
-
-var server = http.createServer(app)
-
-//Start a Socket.IO listen
-var io = socketio.listen(server);
  
 //Set the sockets.io configuration.
 // This is necessary for Heroku
@@ -41,6 +36,11 @@ var io = socketio.listen(server);
 //   sockets.set('transports', ['xhr-polling']);
 //   sockets.set('polling duration', 10);
 // });
+
+//Create the server
+var server = http.createServer(app)
+//Start the web socket server
+var io = socketio.listen(server);
 
 var users = {}
 
@@ -79,3 +79,5 @@ io.sockets.on('connection', function(socket) {
 server.listen(3000, function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+
