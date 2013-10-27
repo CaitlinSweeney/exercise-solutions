@@ -1,3 +1,4 @@
+// SOLUTION 1
 /** Breaks up the array into n segments. */
 Array.prototype.chunk = function(n) {
 	var output = [];
@@ -20,7 +21,7 @@ console.log([1,2,3,4,5,6,7,8,9,10].chunk(3))
 console.log([1,2,3,4,5,6,7,8,9,10].chunk(2))
 
 
-
+// SOLUTION 2
 /** Breaks up the array into n segments. */
 Array.prototype.chunk = function(n) {
 	var output = [];
@@ -46,6 +47,7 @@ console.log([1,2,3,4,5,6,7,8,9,10].chunk(2))
 
 
 
+// SOLUTION 3
 /** Breaks up the array into n segments. */
 Array.prototype.chunk = function(n) {
 	var output = [];
@@ -93,3 +95,16 @@ Array.prototype.chunk = function(n) {
 console.log([1,2,3,4,5,6,7,8,9,10].chunk(7))
 console.log([1,2,3,4,5,6,7,8,9,10].chunk(3))
 console.log([1,2,3,4,5,6,7,8,9,10].chunk(2))
+
+
+/** The most elegant solution of all.
+		From: http://stackoverflow.com/questions/8188548/splitting-a-js-array-into-n-arrays/8189268#8189268
+*/
+Array.prototype.chunk(n) {
+    var len = this.length,out = [], i = 0;
+    while (i < len) {
+        var size = Math.ceil((len - i) / n--);
+        out.push(this.slice(i, i += size));
+    }
+    return out;
+}
