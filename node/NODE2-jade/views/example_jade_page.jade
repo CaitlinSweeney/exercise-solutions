@@ -1,0 +1,58 @@
+extends layout
+
+block content
+  h1 #{title}!
+  h2= "Demonstrating:"
+  ul
+    li #{topics[0]}
+    li #{topics[1]}
+    li #{topics[2]}
+
+    li #{topics[3]}
+    li #{topics[4]}
+    li #{topics[5]}
+
+  h3 #{topics[0]}
+  ol
+    li ordered
+    li list...
+  h3 #{topics[1]}
+  ul
+    li#id_literal ID Literal Example
+    li.class_literal Class Literal Example
+  h3 #{topics[2]}
+  ul
+    li 
+      a(class='button', href='/') Back
+    li 
+      label attribute example 
+        input(type='checkbox', checked=true)
+  h3 #{topics[3]}
+  |   &nbsp;&nbsp;&nbsp;&nbsp;Plain text can include <strong>html</strong>
+  p
+    |   &nbsp;&nbsp;&nbsp;&nbsp;It must always be on its own line
+  h3 #{topics[4]}
+  - var user = { description: 'foo bar baz' }
+  #user(style="margin-left:15px;")
+    if user.description
+      p Jade is conditional with JavaScript...
+      p.description= user.description
+    else
+      h1 you dont see me.
+      p.description User has no description  
+  h3 #{topics[5]}
+  //- Declaration
+  mixin layout_block
+    .container(style="margin-top:30px; margin-left:50px; border:4px solid grey; border-radius:8px; width:200px;")
+      article(style="margin-left:15px;") 
+        h1 Reusable...
+      section(style="margin-left:30px;") 
+        h2 blocks...
+      article(style="margin-left:45px;") 
+        h3 of Jade.
+
+  //- Use
+  +layout_block()
+  +layout_block()
+  +layout_block()
+
