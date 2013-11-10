@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	.container
+		h1 Applicants
+			ul#applications.list-unstyled
+				each rec in applicantData
+					li Name: #{rec.name} 
+						a(href="/#{rec._id}") details
+						button.btn.btn-primary.delete(id='#{rec._id}') delete
+
