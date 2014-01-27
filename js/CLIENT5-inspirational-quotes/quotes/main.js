@@ -1,10 +1,32 @@
+var quotes = [
+	{
+		author: 'Helen Keller',
+		quote: "College isn't the place to go for ideas.",
+		rating: 4
+	},
+	{
+		author: 'George Sewell',
+		quote: 'Fear is the tax that conscience pays to guilt.',
+		rating: 2
+	},
+	{
+		author: 'Helen Keller',
+		quote: "Life is either a daring adventure or nothing. Security does not exist in nature, nor do the children of men as a whole experience it. Avoiding danger is no safer in the long run than exposure.",
+		rating: 3
+	}
+];
+var filteredAuthor = '';
+
 $(function() {
 
-	// HTML RENDERING
+	// 1. DOM MANIPULATION //////////////////
+
+	/** Renders all the quotes into the #quotes element, filtered by author. */
 	var renderQuotes = function() {
 		$("#quotes").empty().append(createQuotesList(quotes, filteredAuthor));
 	}
 
+	/** Creates a new unordered list element containing the given quotes, filtered by author. */
 	var createQuotesList = function(quotes, filteredAuthor) {
 		var list = $('<ul class="list-unstyled">');
 		for(var i=0; i<quotes.length; i++) {
@@ -18,17 +40,7 @@ $(function() {
 		return list;
 	};
 
-	var createSlimQuote = function(quote) {
-		var quoteEl = $('<div class="quote"></div>');
-		var quoteTextEl = $('<q class="quote-text">{quote}</q>'.supplant(quote));
-		var authorEl = $('<div class="quote-author"><a href="#" class="quote-author-link">-{author}</a></div>'.supplant(quote));
-
-		quoteEl.append(quoteTextEl);
-		quoteEl.append(authorEl);
-
-		return quoteEl;
-	};
-
+	/** Create a quote element from the given quote data with the given index. */
 	var createQuote = function(quote, i) {
 		var quoteEl = $('<div class="quote clearfix" data-index="{0}"></div>'.supplant([i]));
 		var quoteControls = $('<div class="quote-controls"></div>')
@@ -47,6 +59,7 @@ $(function() {
 		return quoteEl;
 	};
 
+	/** Create a rating element. */
 	var createRating = function(rating) {
 		return $(('<div class="quote-rating"><div class="btn-group btn-group-xs" data-toggle="buttons">' + 
   		'<label class="btn btn-default{0}">' + 
@@ -73,6 +86,7 @@ $(function() {
 		]));
 	};
 
+	/** Hide the author input and replace it with the given author name to show what quotes are currently being filtered by. */
 	var showByAuthor = function(author) {
 		$('#author-form-group').addClass('animate-left-collapsed')
 		$('#author-shown').removeClass('animate-left-collapsed');
@@ -81,6 +95,7 @@ $(function() {
 		$('#inputQuote').focus();
 	};
 
+	/** Hide the author name and show the author input (as in, disablying the filter). */
 	var hideByAuthor = function(author) {
 		$('#author-form-group').removeClass('animate-left-collapsed')
 		$('#author-shown').addClass('animate-left-collapsed');
@@ -88,7 +103,10 @@ $(function() {
 		$('#inputAuthor').focus();
 	};
 
-	// FORM PROCESSING
+
+	// 2. FORM PROCESSING //////////////////
+
+	/** Extracts the values from the form and return a quote data object. */
 	var getQuote = function() {
 		return {
 			author: $('#inputAuthor').val(),
@@ -96,17 +114,20 @@ $(function() {
 		};
 	};
 
+	/** Clears the values in the quote form. */
 	var clearQuoteForm = function() {
 		$('#add-quote-form input').val('');
 		clearValidation();
 		$('#inputAuthor').focus();
 	};
 
+	/** Clears any validation errors on the form. */
 	var clearValidation = function() {
 		$('#validation-message').addClass('hidden')
 		$('#add-quote-form .has-error').removeClass('has-error');
 	};
 
+	/** Validates the form values, displaying validation errors. Returns true if the form is valid, otherwise returns false. */
 	var validateForm = function() {
 
 		clearValidation();
@@ -126,6 +147,7 @@ $(function() {
 		return valid;
 	};
 
+	/** Displays the validation error message. */
 	var displayValidationError = function() {
 
 		$('#validation-message')
@@ -134,31 +156,9 @@ $(function() {
 	};
 
 
-	// DATA
-	var getQuoteData = function() {
-		var quotes = [
-			{
-				author: 'Helen Keller',
-				quote: "College isn't the place to go for ideas.",
-				rating: 4
-			},
-			{
-				author: 'George Sewell',
-				quote: 'Fear is the tax that conscience pays to guilt.',
-				rating: 2
-			},
-			{
-				author: 'Helen Keller',
-				quote: "Life is either a daring adventure or nothing. Security does not exist in nature, nor do the children of men as a whole experience it. Avoiding danger is no safer in the long run than exposure.",
-				rating: 3
-			}
-		];
+	// 3. EVENTS //////////////////
 
-		return quotes;
-	};
-
-
-	// EVENTS
+	// submit form
 	$('#add-quote-form').submit(function() {
 		if(validateForm()) {
 			quotes.splice(0,0,getQuote());
@@ -215,9 +215,7 @@ $(function() {
 	});
 
 
-	// MAIN
-	var quotes = getQuoteData();
-	var filteredAuthor = '';
+	// 4. MAIN //////////////////
 	quotes.sort(compareByReverseRating);
 	renderQuotes();
 	$('#inputAuthor').focus();
