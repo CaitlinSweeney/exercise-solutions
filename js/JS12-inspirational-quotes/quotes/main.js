@@ -135,12 +135,12 @@ $(function() {
 		var valid = true;
 
 		if($('#inputAuthor').val().length === 0) {
-			$('#inputAuthor').parents('.form-group:first').addClass('has-error');
+			$('#inputAuthor').closest('.form-group').addClass('has-error');
 			valid = false;
 		}
 
 		if($('#inputQuote').val().length === 0) {
-			$('#inputQuote').parents('.form-group:first').addClass('has-error');
+			$('#inputQuote').closest('.form-group').addClass('has-error');
 			valid = false;
 
 		}
@@ -159,22 +159,24 @@ $(function() {
 	// 3. EVENTS //////////////////
 
 	// submit form
-	$('#add-quote-form').submit(function() {
+	$('#add-quote-form').submit(function(e) {
+		e.preventDefault();
+
 		if(validateForm()) {
-			quotes.splice(0,0,getQuote());
+			// quotes.splice(0,0,getQuote());
+			quotes.push(getQuote());
 			renderQuotes();
 			clearQuoteForm();
 		}
 		else {
 			displayValidationError();
 		}
-		return false;
 	});
 
 	// delete a quote
 	$(document).on('click', '.quote-delete', function() {
 		$('#random-quote-modal').modal('hide');
-		var quote = $(this).parents('.quote:first')
+		var quote = $(this).closest('.quote')
 		var index = quote.data('index');
 		quotes.splice(index,1);
 		renderQuotes();
@@ -182,7 +184,7 @@ $(function() {
 
 	// rate a quote
 	$(document).on('click', '.quote-rating .btn', function() {
-		var index = $(this).parents('.quote:first').data('index');
+		var index = $(this).closest('.quote').data('index');
 		quotes[index].rating = +$(this).text();
 		quotes.sort(compareByReverseRating);
 		renderQuotes();
@@ -217,7 +219,7 @@ $(function() {
 
 	// 4. MAIN //////////////////
 	quotes.sort(compareByReverseRating);
-	renderQuotes();
+	renderQuotes(quotes, filteredAuthor);
 	$('#inputAuthor').focus();
 
 });
