@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Digital;
+    src: url(DS-DIGI.TTF);
+    font-weight:400;
+}
+
+.container {
+	text-align: center;
+	margin: 50px;
+}
+
+.clock {
+	display: inline-block;
+}
+
+.outer-shell {
+	background-color: #666;
+	padding: 20px;
+}
+
+.inner-shell {
+	background-color: black;
+	color: white;
+	padding: 40px 10px;
+	border-radius: 20px;
+}
+
+.clock-face {
+	position: relative;
+}
+
+.pm-label {
+	text-align: right;
+	position: absolute;
+	top: 1em;
+	width: 4em;
+	margin-right: 1em;
+}
+
+.auto-label {
+	text-align: right;
+	position: absolute;
+	bottom: 1em;
+	width: 4em;
+	margin-right: 1em;
+}
+
+.clock-screen {
+	background-color: darkred;
+	color: red;
+	font-family: Digital;
+	padding: 20px;
+	border-radius: 20px;
+	margin: 0 5em 10px 5em;
+	overflow: auto;
+}
+
+.clock-am-pm-indicator {
+	font-size: 40px;
+	float: left;
+	padding-right: 1em;
+}
+
+.clock-text {
+	font-size: 200px;
+	float: left;
+}
+
+.radio {
+	font-family: Verdana;
+	background-color: black;
+	font-size: 16px;
+}
+
+.bottom-am {
+	margin: 0 5em;
+	letter-spacing: 4px;
+}
+
+.bottom-pm {
+	margin: 0 5em;
+	letter-spacing: 4px;
+}
+
+.bottom-am-label {
+	margin-right: 2em;
+	float: left;
+}
+
+.bottom-pm-label {
+	margin-right: 2em;
+	float: left;
+}
+
