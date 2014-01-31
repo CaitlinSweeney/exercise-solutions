@@ -17,6 +17,7 @@ var quotes = [
 ];
 var filteredAuthor = '';
 
+// $(document).on('ready', function() {
 $(function() {
 
 	// 1. DOM MANIPULATION //////////////////
@@ -28,16 +29,18 @@ $(function() {
 
 	/** Creates a new unordered list element containing the given quotes, filtered by author. */
 	var createQuotesList = function(quotes, filteredAuthor) {
-		var list = $('<ul class="list-unstyled">');
-		for(var i=0; i<quotes.length; i++) {
-			if(!filteredAuthor || quotes[i].author === filteredAuthor) {
-				var quoteEl = createQuote(quotes[i], i);
-				var item = $('<li>');
-				item.append(quoteEl);
-				list.append(item);
-			}
-		}
-		return list;
+
+		var quotesToRender = !filteredAuthor ?
+			quotes : 
+			quotes.filter(function(quote) {
+				return quote.author === filteredAuthor;
+			});
+
+		var quoteItems = quotesToRender.map(function(quote, i) {
+			return $('<li>').append(createQuote(quotes[i], i));
+		});
+
+		return $('<ul class="list-unstyled">').append(quoteItems);
 	};
 
 	/** Create a quote element from the given quote data with the given index. */
@@ -61,29 +64,29 @@ $(function() {
 
 	/** Create a rating element. */
 	var createRating = function(rating) {
-		return $(('<div class="quote-rating"><div class="btn-group btn-group-xs" data-toggle="buttons">' + 
-  		'<label class="btn btn-default{0}">' + 
-	    	'<input type="radio" name="options" id="rating1" value="1">1' + 
-	  	'</label>' + 
-	  	'<label class="btn btn-default{1}">' + 
-	    	'<input type="radio" name="options" id="rating2" value="2">2' + 
-	  	'</label>' + 
-	  	'<label class="btn btn-default{2}">' + 
-	    	'<input type="radio" name="options" id="rating3" value="3">3' + 
-	  	'</label>' + 
-	  	'<label class="btn btn-default{3}">' + 
-	    	'<input type="radio" name="options" id="rating4" value="4">4' + 
-	  	'</label>' + 
-	  	'<label class="btn btn-default{4}">' + 
-	    	'<input type="radio" name="options" id="rating5" value="5">5' + 
-	  	'</label>' + 
-		'</div></div>').supplant([
-			rating === 1 ? ' active' : '',
-			rating === 2 ? ' active' : '',
-			rating === 3 ? ' active' : '',
-			rating === 4 ? ' active' : '',
-			rating === 5 ? ' active' : ''
-		]));
+		var ratingEl = $('<div class="quote-rating">');
+		var buttonGroup = $('<div class="btn-group btn-group-xs" data-toggle="buttons">');
+
+		buttonGroup.append([1,2,3,4,5].map(function(n) {
+			return createRatingLabel(rating, n);
+		}))
+
+		ratingEl.append(buttonGroup);
+
+		return ratingEl;
+	};
+
+	/** Creates a single rating label element to be used in a button group. */
+	var createRatingLabel = function(rating, n) {
+		var label = $('<label class="btn btn-default">').text(n);
+    var radio = $('<input type="radio" name="options">').attr('value', n);
+
+  	label.append(radio);
+
+  	if(rating === n) {
+  		label.addClass('active');
+  	}
+  	return label;
 	};
 
 	/** Hide the author input and replace it with the given author name to show what quotes are currently being filtered by. */
@@ -110,7 +113,7 @@ $(function() {
 	var getQuote = function() {
 		return {
 			author: $('#inputAuthor').val(),
-			quote: $('#inputQuote').val()
+			quote:  $('#inputQuote').val()
 		};
 	};
 
@@ -159,12 +162,11 @@ $(function() {
 	// 3. EVENTS //////////////////
 
 	// submit form
-	$('#add-quote-form').submit(function(e) {
+	$('#add-quote-form').on('submit', function(e) {
 		e.preventDefault();
 
 		if(validateForm()) {
-			// quotes.splice(0,0,getQuote());
-			quotes.push(getQuote());
+			quotes.splice(0,0,getQuote());
 			renderQuotes();
 			clearQuoteForm();
 		}
@@ -176,15 +178,15 @@ $(function() {
 	// delete a quote
 	$(document).on('click', '.quote-delete', function() {
 		$('#random-quote-modal').modal('hide');
-		var quote = $(this).closest('.quote')
-		var index = quote.data('index');
+		var quote = $(this).closest('.quote');
+		var index = quote.attr('data-index');
 		quotes.splice(index,1);
 		renderQuotes();
 	});
 
 	// rate a quote
 	$(document).on('click', '.quote-rating .btn', function() {
-		var index = $(this).closest('.quote').data('index');
+		var index = $(this).closest('.quote').attr('data-index');
 		quotes[index].rating = +$(this).text();
 		quotes.sort(compareByReverseRating);
 		renderQuotes();
@@ -198,13 +200,12 @@ $(function() {
 		$('#random-quote-modal').modal('hide');
 		clearValidation();
 		renderQuotes();
-		// $('.quote-author-link').remove();
 	});
 
 	// remove filter by author
 	$('#author-shown-close').on('click', function() {
 		hideByAuthor();
-		filteredAuthor = ''
+		filteredAuthor = '';
 		renderQuotes();
 	});
 
@@ -219,7 +220,7 @@ $(function() {
 
 	// 4. MAIN //////////////////
 	quotes.sort(compareByReverseRating);
-	renderQuotes(quotes, filteredAuthor);
+	renderQuotes();
 	$('#inputAuthor').focus();
 
 });
