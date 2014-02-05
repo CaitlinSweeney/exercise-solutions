@@ -144,7 +144,7 @@ var lime = new FoodItem('Lime', 40, true, true, false);
 
 var burrito = new Plate('Burrito', 'A hearty meal.', 10, [tortilla, avocado, carne]);
 var guacamole = new Plate('Guácomole', 'What chips were invented for.', 4, [avocado, onion, cilantro, lime]);
-var margarita = new Drink('Margarita', 'Delicious and make you feel good.', 6, [tequila, triplesec, lime]);
+var margarita = new Drink('Margarita', 'Delicious and makes you feel good.', 6, [tequila, triplesec, lime]);
 
 var menu = new Menu([burrito, guacamole, margarita]);
 var restaurant = new Restaurant('Banditos Fritos', 'A fine Mexican dining experience.', menu);
