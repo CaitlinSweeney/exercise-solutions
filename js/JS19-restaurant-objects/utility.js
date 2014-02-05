@@ -10,6 +10,7 @@ if (!String.prototype.supplant) {
     };
 }
 
+/** Returns a new array containing the result of calling the given function on each item in the given array. */
 function map(arr, f) {
 	var out = [];
 	for(var i=0, len=arr.length; i<len; i++) {
@@ -18,10 +19,21 @@ function map(arr, f) {
 	return out;
 }
 
+/** Returns a new array containing the value of the given property of each item in the array of objects. */
 function pluck(arr, prop) {
 	var out = [];
 	for(var i=0, len=arr.length; i<len; i++) {
 		out.push(arr[i][prop]);
 	}
 	return out;
+}
+
+/** Returns true if all the items in the given array are truthy. Returns true for []. */
+var and = function(operands) {
+	for(var i=0; i<operands.length; i++) {
+		if(!operands[i]) {
+			return false;
+		}
+	}
+	return true;
 }

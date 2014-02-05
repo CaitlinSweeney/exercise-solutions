@@ -57,3 +57,5 @@ console.log('dashInsert');
 console.log( dashInsert(454793) === "4547-9-3", 'dashes between odd digits' );
 
 
+
+// rewrite using zip

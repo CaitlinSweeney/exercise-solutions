@@ -37,7 +37,7 @@ Plate.prototype.toString = function() {
 		'Vegan: {2}',
 		'Gluten Free: {3}',
 		'Citrus Free: {4}',
-		'Ingredients: \n  {5}'
+		'Ingredients: \n{5}'
 	].join('\n').supplant([
 		this.name,
 		this.description,
@@ -49,55 +49,16 @@ Plate.prototype.toString = function() {
 }
 
 Plate.prototype.isVegan = function() {
-	for(var i=0, len=this.ingredients.length; i<len; i++) {
-		if(!this.ingredients[i].vegan) {
-			return false;
-		}
-	}
-	return true;
+	return and(pluck(this.ingredients, 'vegan'));
 }
 
 Plate.prototype.isGlutenFree = function() {
-	for(var i=0, len=this.ingredients.length; i<len; i++) {
-		if(!this.ingredients[i].glutenFree) {
-			return false;
-		}
-	}
-	return true;
+	return and(pluck(this.ingredients, 'glutenFree'));
 }
 
 Plate.prototype.isCitrusFree = function() {
-	for(var i=0, len=this.ingredients.length; i<len; i++) {
-		if(!this.ingredients[i].citrusFree) {
-			return false;
-		}
-	}
-	return true;
+	return and(pluck(this.ingredients, 'citrusFree'));
 }
-
-/*
-// ADVANCED: Here is how you can abstract the above logic to eliminate the looping redundancy
-Plate.prototype.isTrueOfAllIngredients = function(prop) {
-	for(var i=0, len=this.ingredients.length; i<len; i++) {
-		if(!this.ingredients[i][prop]) {
-			return false;
-		}
-	}
-	return true;
-}
-
-Plate.prototype.isVegan = function() {
-	return this.isTrueOfAllIngredients('vegan');
-}
-
-Plate.prototype.isGlutenFree = function() {
-	return this.isTrueOfAllIngredients('glutenFree');
-}
-
-Plate.prototype.isCitrusFree = function() {
-	return this.isTrueOfAllIngredients('citrusFree');
-}
-*/
 
 // Drink
 function Drink(name, description, price, ingredients) {
@@ -110,7 +71,7 @@ function Drink(name, description, price, ingredients) {
 Drink.prototype.toString = function() {
 	return [
 		'{0} - {1}',
-		'Ingredients: \n  {2}'
+		'Ingredients: \n{2}'
 	].join('\n').supplant([
 		this.name,
 		this.description,
