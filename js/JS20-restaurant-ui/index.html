@@ -3,38 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <title>Banditos Fritos</title>
+  <title>Don Pedro's Mexican Restaurant</title>
 </head>
 <body>
 
 <div class="container">
 
-	<div>
-		<h1 id="page-title"></h1>
-		<p id="page-description" class="lead"></h1>
-	</div>
+	<header id="main-header">
+		<img src="menu.png">
+	</header>
+	
+	<div class="content">
 
-	<div class="row">
-		<div class="col-sm-8">
-			<h1>Menu</h1>
-			<div id="menu"></div>
-			</ul>
+		<div>
+			<h1 id="page-title"></h1>
+			<p id="page-description" class="lead"></h1>
 		</div>
-		<div class="col-sm-4">
-			<h1>Order</h1>
-			<div id="order"></div>
-			</ul>
+
+		<div class="row">
+			<div class="col-sm-8">
+				<h1>Menu</h1>
+				<div id="menu"></div>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h1>Order</h1>
+				<div id="order"></div>
+				</ul>
+			</div>
 		</div>
+
 	</div>
 
 </div>
 
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="rjs.js"></script>
-<script>RJS.installPrototypes()</script>
 <script src="food.js"></script>
 <script src="main.js"></script>
 

@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+}
+
+.container {
+	margin: auto;
+	width: 983px;
+	background-color: #E7A85F;
+}
+
+.content {
+	padding: 40px;
+}
+
+h1 {
+	color: #000;
+	-webkit-text-stroke: 1.5px #fff;
+}
