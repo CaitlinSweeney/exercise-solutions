@@ -1,3 +1,5 @@
+console.log('BEGIN ASSERTIONS');
+
 /** Returns true if the string is the same forwards as backwards, false otherwise. */
 var palindrome = function(str) {
 	for(var i=0; i<str.length/2; i++) {
@@ -8,19 +10,17 @@ var palindrome = function(str) {
 	return true;
 }
 
-console.log('TESTS (should all return true):');
 
-console.log('palindrome');
-console.log( palindrome('bulldozer') === false, 'not a palindrome' );
-console.log( palindrome('racecar') === true, 'odd number of letters' );
-console.log( palindrome('noon') === true, 'even number of letters' );
-console.log( palindrome('a') === true, 'single letter' );
-console.log( palindrome('') === true, 'empty string' );
+console.assert( palindrome('bulldozer') === false, 'palindrome' );
+console.assert( palindrome('racecar') === true, 'palindrome' );
+console.assert( palindrome('noon') === true, 'palindrome' );
+console.assert( palindrome('a') === true, 'palindrome' );
+console.assert( palindrome('') === true, 'palindrome' );
 
 /** Returns a string that represents the given number with dashes between each odd digit. */
 var dashInsert = function(n) {
 	var numStr = n.toString();
-	var isOdd = function(d) { return +(d) % 2 === 1; };
+	var isOdd = function(d) { return d % 2 === 1; };
 
 	// initialize the output with the first digit
 	var output = numStr[0];
@@ -53,9 +53,60 @@ var dashInsert = function(n) {
 	return output;
 }
 
-console.log('dashInsert');
-console.log( dashInsert(454793) === "4547-9-3", 'dashes between odd digits' );
+console.assert( dashInsert(454793) === "4547-9-3", 'dashInsert' );
 
 
 
-// rewrite using zip
+// be clever
+var dashInsert2 = function(n) {
+	var digits = n.toString().split('');
+	var isOdd = function(d) { return d % 2 === 1; };
+	var zip = function(a,b) {
+		return a.map(function(item, i) {
+			return [item, b[i]];
+		})
+	};
+
+	return zip(digits, digits.slice(1))
+		.slice(0, -1)
+		.map(function(pair) {
+			return pair[0] + (pair.every(isOdd) ? '-' : '' ) + pair[1]
+		})
+		.reduce(function(x,y) {
+			return x + y.substring(1);
+		})
+}
+
+console.assert( dashInsert2(454793) === '4547-9-3', 'dashInsert2' );
+
+
+var caesarCipher = function(str, n) {
+
+	var isLetter = function(c) {
+		var code = c.charCodeAt(0);
+		return (code >= 65 && code <= 65+25) ||
+			(code >= 97 && code <= 97+25);
+	};
+
+	var shift = function(c, n) {
+		n = n % 26;
+		var code = c.charCodeAt(0)+n;
+		return String.fromCharCode(
+			n > 0 && (code > 97+25 || (code > 65+25 && code < 97)) ? code-26 : 
+			n < 0 && (code < 65 || (code < 97 && code > 65+25)) ? code+26 :
+			code
+		);
+	}
+
+	return str
+		.split('')
+		.map(function(c) {
+			return isLetter(c) ? shift(c, n) : c;
+		})
+		.join('')
+}
+
+console.assert( caesarCipher('Caesar Cipher', 2) === 'Ecguct Ekrjgt', 'caesarCipher');
+console.assert( caesarCipher('taz + TAZ', 1) === 'uba + UBA', 'caesarCipher');
+console.assert( caesarCipher('taz + TAZ', 27) === 'uba + UBA', 'caesarCipher');
+console.assert( caesarCipher('ma & PA', -1) === 'lz & OZ', 'caesarCipher');
