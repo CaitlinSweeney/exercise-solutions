@@ -37,7 +37,7 @@ var numberSearch = function(str) {
 
 /** Return the longest word in the string. Returns the first of there's a tie. */
 var longestWord = function(str) {
-	var words = str.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, '').split(' ');
+	var words = str.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, ' ').split(' ');
 	var lengths = words.map(function(w) { return w.length; });
 	var maxLength = Math.max.apply(Math, lengths);
   return words[lengths.indexOf(maxLength)];
@@ -65,5 +65,6 @@ assert(longestWord('This is a stickup') === 'stickup');
 assert(longestWord('What would Ferdinand do?') === 'Ferdinand');
 assert(longestWord('Race fast.') === 'Race', 'should ignore punctuation');
 assert(longestWord('If only four were one.') === 'only', 'if tie, first longest word should be returned');
+assert(longestWord('en-us lang') === 'lang', 'removed punctuation should not accidentally merge words');
 
 assert(numberSearch2('Hello6 9World 2, Nic8e D7ay!') === 2);
