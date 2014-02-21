@@ -1,0 +1,62 @@
+/* SET THE BOX MODEL */
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+/* BASE STYLES */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/* UTILITY STYLES*/
+.tooltip {
+    position: absolute;
+    width: 100px;
+    border-radius: 4px;
+    display: none;
+    padding: 4px 8px;
+    margin: 0;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+}
+.tooltip:before {
+    content: ' ';
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    position: absolute;
+    left: 45px;
+    top: -5px;
+}
+.tooltip input {
+    width: 100%;
+    outline: 0;
+}
+
+
+/* THEME STYLES */
+#map-container {
+    width: 600px;
+    padding: 20px 0;
+    position: relative;
+    margin: auto;
+}
+#map-image {
+    max-width: 100%;
+}
+#marker-original {
+    display: none;
+}
+.marker {
+    position: absolute;
+}
+.marker-note {
+    left: -40px;
+    top: 105%;
+}

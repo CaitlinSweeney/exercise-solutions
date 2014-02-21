@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gold Rush</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!-- Base content container -->
+        <div id="map-container">
+            <!-- Actual map image -->
+            <img id="map-image" src="images/co_map.jpg" alt="Colorado Topological Map">
+        </div>
+
+        <!-- The original marker template, cloned via jQuery -->
+        <div id="marker-original" class="marker">
+            <img class="pin" src="images/map_marker.png" alt="Map Marker">
+            <div class="marker-note tooltip">
+                <!-- Input for setting a note. Is removed/replaced when content is set -->
+                <input type="text" class="marker-input" placeholder="Add note?">
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
