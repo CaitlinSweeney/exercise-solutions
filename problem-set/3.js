@@ -1,5 +1,3 @@
-console.log('BEGIN ASSERTIONS');
-
 /** Returns true if the string is the same forwards as backwards, false otherwise. */
 var palindrome = function(str) {
 	for(var i=0; i<str.length/2; i++) {
@@ -9,13 +7,6 @@ var palindrome = function(str) {
 	}
 	return true;
 }
-
-
-console.assert( palindrome('bulldozer') === false, 'palindrome' );
-console.assert( palindrome('racecar') === true, 'palindrome' );
-console.assert( palindrome('noon') === true, 'palindrome' );
-console.assert( palindrome('a') === true, 'palindrome' );
-console.assert( palindrome('') === true, 'palindrome' );
 
 /** Returns a string that represents the given number with dashes between each odd digit. */
 var dashInsert = function(n) {
@@ -53,9 +44,6 @@ var dashInsert = function(n) {
 	return output;
 }
 
-console.assert( dashInsert(454793) === "4547-9-3", 'dashInsert' );
-
-
 
 // be clever
 var dashInsert2 = function(n) {
@@ -76,8 +64,6 @@ var dashInsert2 = function(n) {
 			return x + y.substring(1);
 		})
 }
-
-console.assert( dashInsert2(454793) === '4547-9-3', 'dashInsert2' );
 
 
 var caesarCipher = function(str, n) {
@@ -106,7 +92,9 @@ var caesarCipher = function(str, n) {
 		.join('')
 }
 
-console.assert( caesarCipher('Caesar Cipher', 2) === 'Ecguct Ekrjgt', 'caesarCipher');
-console.assert( caesarCipher('taz + TAZ', 1) === 'uba + UBA', 'caesarCipher');
-console.assert( caesarCipher('taz + TAZ', 27) === 'uba + UBA', 'caesarCipher');
-console.assert( caesarCipher('ma & PA', -1) === 'lz & OZ', 'caesarCipher');
+module.exports = {
+	palindrome: palindrome,
+	dashInsert: dashInsert,
+	dashInsert2: dashInsert2,
+	caesarCipher: caesarCipher
+};

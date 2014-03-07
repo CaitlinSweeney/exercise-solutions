@@ -1,12 +1,10 @@
-var assert = require('better-assert');
-
 /** Returns true if the given string is a number. */
 var isNumber = function(s) {
   return !isNaN(parseFloat(s)) && isFinite(s);
 };
 
 /** Searches for all the numbers in a string and adds them together. */
-var numberSearch = function(str) {
+var addNumbers = function(str) {
 	var groups = [];
 	var currentGroup = '';
 
@@ -44,7 +42,7 @@ var longestWord = function(str) {
 };
 
 
-var numberSearch2 = function(str) {
+var averageStringNumbers = function(str) {
 	var sum = str
 		.split('')
 		.filter(function(c) { return isNumber(c); })
@@ -54,17 +52,8 @@ var numberSearch2 = function(str) {
   return Math.round(sum/letters.length);
 };
 
-
-// UNIT TESTS ///////////////////////////////////////////////
-
-assert(numberSearch('88Hello 3Word') === 91);
-assert(numberSearch('55Hello') === 55);
-assert(numberSearch('5Hello 5') === 10);
-
-assert(longestWord('This is a stickup') === 'stickup');
-assert(longestWord('What would Ferdinand do?') === 'Ferdinand');
-assert(longestWord('Race fast.') === 'Race', 'should ignore punctuation');
-assert(longestWord('If only four were one.') === 'only', 'if tie, first longest word should be returned');
-assert(longestWord('en-us lang') === 'lang', 'removed punctuation should not accidentally merge words');
-
-assert(numberSearch2('Hello6 9World 2, Nic8e D7ay!') === 2);
+module.exports = {
+	addNumbers: addNumbers,
+	averageStringNumbers: averageStringNumbers,
+	longestWord: longestWord,
+};

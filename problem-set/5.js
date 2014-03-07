@@ -1,11 +1,21 @@
-var recursive;
+// #1
+var alphabetSoup = function(s) {
+  return s.split('').sort().join('');
+};
 
+// #2
+var vowelCount = function(s) {
+	var reg = /[aeiouAEIOU]/;
+	var isVowel = reg.test.bind(reg);
+  return s.split('').filter(isVowel).length;
+};
+
+// #3
 var coinDeterminer = function(n, coins) {
 
 	var queue = [{ n: n, c: 0}];
 
 	var process = function() {
-		recursive++;
 		var node = queue.shift();
 		// console.log(node)
 		// console.log('\n');
@@ -39,22 +49,8 @@ var coinDeterminer = function(n, coins) {
 	}
 }
 
-// TESTS ///////////////////////////////////////////////
-
-// recursive = 0;
-// console.log('TEST: ', coinDeterminer(16, [11, 9, 7, 5, 1]), 2);
-// console.log(recursive);
-
-// recursive = 0;
-// console.log('TEST: ', coinDeterminer(25, [11, 9, 7, 5, 1]), 3);
-// console.log(recursive);
-
-// recursive = 0;
-// console.log('TEST: ', coinDeterminer(12, [5, 4, 1]), 3);
-// console.log(recursive);
-
-// recursive = 0;
-console.log('TEST: ', coinDeterminer(79, [1, 5, 7, 13]), 7);
-// console.log(recursive);
-
-
+module.exports = {
+	alphabetSoup: alphabetSoup,
+	vowelCount: vowelCount,
+	coinDeterminer: coinDeterminer
+};

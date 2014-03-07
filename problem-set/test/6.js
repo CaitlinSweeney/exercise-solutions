@@ -1,5 +1,5 @@
 var should = require('chai').should(),
-	_6 = require('./6.js');
+	_6 = require('../6.js');
 
 describe('bracketMatcher', function() {
   

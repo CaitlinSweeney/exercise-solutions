@@ -1,0 +1,13 @@
+{
+  "name": "problem-set",
+  "version": "0.0.0",
+  "devDependencies": {
+    "better-assert": "~1.0.0",
+    "chai": "~1.9.0",
+    "mocha": "~1.17.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "private": true
+}
