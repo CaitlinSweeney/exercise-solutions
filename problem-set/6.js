@@ -18,19 +18,6 @@ var secondGreatLow = function(numbers) {
   return arr[1] + ' ' + arr[arr.length-2];
 };
 
-// #1 TESTS
-
-// withoutDuplicates
-// console.log(withoutDuplicates([]), 'should equal', []);
-// console.log(withoutDuplicates([2]), 'should equal', [ 2 ]);
-// console.log(withoutDuplicates([2, 3, 4, 4, 9]), 'should equal', [ 2, 3, 4, 9 ]);
-
-// secondGreatLow
-// console.log(secondGreatLow([7, 7, 12, 98, 106]), 'should equal', '12 98');
-// console.log(secondGreatLow([6, 3, 9, 2, 1]), 'should equal', '2 6');
-// console.log(secondGreatLow([6, 3]), 'should equal', '6 3');
-
-
 // #2
 
 var timeConvert = function(num) {
@@ -38,12 +25,6 @@ var timeConvert = function(num) {
 	var minutes = num % 60;
 	return hours + ':' + minutes;
 };
-
-// console.log(timeConvert(0), 'should equal', '0:0');
-// console.log(timeConvert(45), 'should equal', '0:45');
-// console.log(timeConvert(60), 'should equal', '1:0');
-// console.log(timeConvert(63), 'should equal', '1:3');
-// console.log(timeConvert(150), 'should equal', '2:30');
 
 // #3
 
@@ -72,6 +53,7 @@ var bracketMatcher = function(s) {
 // };
 
 module.exports = {
+	withoutDuplicates: withoutDuplicates,
 	secondGreatLow: secondGreatLow,
 	timeConvert: timeConvert,
 	bracketMatcher: bracketMatcher
