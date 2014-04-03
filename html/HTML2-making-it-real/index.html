@@ -15,7 +15,7 @@
   </header>
 
   <nav class="main-nav">
-    <ul class="list-unstyled pull-right">
+    <ul class="list-inline pull-right">
       <li><a class="link-strong" href="#">Home</a></li>
       <li><a class="link-strong" href="#">All Posts</a></li>
       <li><a class="link-strong" href="#">About Us</a></li>
@@ -64,17 +64,17 @@
               <tr>
                 <td>HTML</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sit accusantium ipsum saepe voluptatem. Voluptas, quam, distinctio, animi natus labore fugit itaque ut beatae eius delectus neque dolore omnis vel!</td>
-                <td><button class="button-fancy">Go!</button></td>
+                <td><button class="button button-fancy">Go!</button></td>
               </tr>
               <tr>
                 <td>CSS</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, maiores nulla unde impedit ut.</td>
-                <td><button class="button-fancy">Try!</button></td>
+                <td><button class="button button-fancy">Try!</button></td>
               </tr>
               <tr>
                 <td>JS</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</td>
-                <td><button class="button-fancy">View!</button></td>
+                <td><button class="button button-fancy">View!</button></td>
               </tr>
             </tbody>
           </table>
@@ -117,7 +117,7 @@ console.log('Clicked!')
     <h2>Comments</h2>
 
     <form>
-      <fieldset>
+      <fieldset class="form-section">
         <legend class="legend-strong">User Info</legend>
         <div class="input-group">
           <label for="email" class="form-label">Email</label>
@@ -132,68 +132,67 @@ console.log('Clicked!')
           <input type="url" class="form-control" name="website" />
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="form-section">
         <legend class="legend-strong">Comment</legend>
         <div class="input-group">
-          <textarea name="comment" class="comment" cols="30" rows="10"></textarea>
+          <textarea name="comment" cols="85" rows="10"></textarea>
         </div>
       </fieldset>
-      <input type="submit" class="button-hot wide">
+      <input type="submit" class="button button-hot wide">
     </form>
 
-    <div class="commentlist">
-      <ul>
-        <li class="comment">
-          <div class="comment-meta">
-            <img src="http://placehold.it/50x50" alt="">
-            <h3>User 1</h3>
-            <span class="date">January 13, 2014</span>
-          </div>
-          <div class="comment-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quaerat, similique dolore veniam dicta aspernatur sit a quas nisi totam quos culpa delectus nostrum iusto itaque quibusdam laborum obcaecati asperiores.
-          </div>
-        </li>
-        <li>
-          <ul class="replies">
+    <ul class="list-nested list-inline">
+      <li class="media-block">
+        <div class="media-block-meta">
+          <img class="pull-left" src="http://placehold.it/50x50" alt="">
+          <h3 class="media-block-title">User 1</h3>
+          <span class="media-block-subtitle date">January 13, 2014</span>
+        </div>
+        <div class="comment-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quaerat, similique dolore veniam dicta aspernatur sit a quas nisi totam quos culpa delectus nostrum iusto itaque quibusdam laborum obcaecati asperiores.
+        </div>
+      </li>
+      <li>
+        <ul class="replies list-inline">
 
-            <li class="comment">
-              <div class="comment-meta">
-                <img src="http://placehold.it/50x50" alt="">
-                <h3>User 1</h3>
-                <span class="date">January 13, 2014</span>
-              </div>
-              <div class="comment-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quaerat, similique dolore veniam dicta aspernatur sit a quas nisi totam quos culpa delectus nostrum iusto itaque quibusdam laborum obcaecati asperiores.
-              </div>
-            </li>
-
-            <li class="comment">
-              <div class="comment-meta">
-                <img src="http://placehold.it/50x50" alt="">
-                <h3>User 3</h3>
-                <span class="date">January 13, 2014</span>
-              </div>
-              <div class="comment-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quaerat, similique dolore veniam dicta aspernatur sit a quas nisi totam quos culpa delectus nostrum iusto itaque quibusdam laborum obcaecati asperiores.
-              </div>
-            </li>
-
-          </ul>
-
-          <li class="comment">
-            <div class="comment-meta">
-              <img src="http://placehold.it/50x50" alt="">
-              <h3>User 2</h3>
-              <span class="date">January 13, 2014</span>
+          <li class="media-block">
+            <div class="media-block-meta">
+              <img class="pull-left" src="http://placehold.it/50x50" alt="">
+              <h3 class="media-block-title">User 1</h3>
+              <span class="media-block-subtitle date">January 13, 2014</span>
             </div>
             <div class="comment-body">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quaerat, similique dolore veniam dicta aspernatur sit a quas nisi totam quos culpa delectus nostrum iusto itaque quibusdam laborum obcaecati asperiores.
             </div>
           </li>
-        </li>
 
-      </ul>
-    </div>
+          <li class="media-block">
+            <div class="media-block-meta">
+              <img class="pull-left" src="http://placehold.it/50x50" alt="">
+              <h3 class="media-block-title">User 3</h3>
+              <span class="media-block-subtitle date">January 13, 2014</span>
+            </div>
+            <div class="comment-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quaerat, similique dolore veniam dicta aspernatur sit a quas nisi totam quos culpa delectus nostrum iusto itaque quibusdam laborum obcaecati asperiores.
+            </div>
+          </li>
+
+        </ul>
+
+        <li class="media-block">
+          <div class="media-block-meta">
+            <img class="pull-left" src="http://placehold.it/50x50" alt="">
+            <h3 class="media-block-title">User 2</h3>
+            <span class="media-block-subtitle date">January 13, 2014</span>
+          </div>
+          <div class="comment-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quaerat, similique dolore veniam dicta aspernatur sit a quas nisi totam quos culpa delectus nostrum iusto itaque quibusdam laborum obcaecati asperiores.
+          </div>
+        </li>
+      </li>
+
+    </ul>
+
   </main>
 </div>
 

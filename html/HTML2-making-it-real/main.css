@@ -27,15 +27,13 @@ ol li {
 }
 pre {
   background: #bdc3c7;
-  padding: 20px;
+  padding: 20px 30px;
   color: #333;
 }
 
-fieldset {
-  border: 0;
-  border-top: 1px solid #bdc3c7;
-  margin: 0 0 30px 0;
-  padding: 20px 0 0 0;
+textarea {
+	width: 100%;
+	box-sizing: border-box;
 }
 
 /* Helper Classes */
@@ -52,19 +50,21 @@ fieldset {
 }
 
 /* Components */
+.button {
+	border: 0;
+	color: #FFF;
+  background: #ddd;
+}
+
 .button-fancy {
-  border: 0;
   padding: 5px 20px;
   background: #3498db;
-  color: #FFF;
   cursor: pointer;
 }
 
 .button-hot {
   padding: 10px 0;
-  border: 0;
   background: #c0392b;
-  color: #FFF;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -105,13 +105,14 @@ fieldset {
   color: #666;
 }
 
-.list-unstyled {
+.list-inline {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  overflow: auto;
 }
 
-.list-unstyled li {
+.list-inline li {
   padding: 10px 15px;
   float: left;
 }
@@ -161,11 +162,6 @@ fieldset {
   padding: 5px 10px;
 
 }
-.comment {
-  width: 99%;
-  margin: 0;
-  padding: 0;
-}
 
 .input-group {
   overflow: hidden;
@@ -184,39 +180,42 @@ fieldset {
   width: 320px;
   padding: 5px;
 }
+.form-section {
+  border: 0;
+  border-top: 1px solid #bdc3c7;
+  margin: 0 0 30px 0;
+  padding: 20px 0 0 0;
+}
 
-.commentlist {
-  padding: 10px 0;
+
+.list-nested {
+	margin-top: 20px;
 }
-.commentlist ul {
-  list-style-type: none;
-  margin: 20px 0 0 0;
-  padding: 0;
-}
-.commentlist li {
+.list-nested li {
   padding: 0;
   margin-bottom: 20px;
 }
-.comment-meta {
-  overflow: hidden;
-  margin-bottom: 10px;
+.list-nested li:last-child{
+	margin-bottom: 0;
 }
-.comment-meta img {
-  float: left;
-}
-.comment-meta h3 {
-  margin: 7px 0;
-  padding-left: 65px;
-}
-.comment-meta .date {
-  padding-left: 15px;
-  font-style: italic;
-  color: #999;
-}
-.commentlist li .replies {
+.list-nested li ul {
   margin-left: 20px;
   padding-left: 10px;
   border-left: 1px solid #CCC;
+}
+
+.media-block-meta {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.media-block-title {
+  margin: 7px 0;
+  padding-left: 65px;
+}
+.media-block-subtitle {
+  padding-left: 15px;
+  font-style: italic;
+  color: #999;
 }
 
 /* Modules */
