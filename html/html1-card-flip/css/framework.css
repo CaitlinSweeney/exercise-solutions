@@ -10,35 +10,28 @@ body {
 	font-size: 12px;
 }
 
-#portfolio {
-	margin: 0;
+h2 {
+	margin-top: 0px;
 }
 
 .portfolio-item {
 	float: left;
-	-webkit-perspective: 600px;
 	margin: 10px;
 }
 
-.primary, .secondary {
-	width: 200px;
-	height: 200px;
+.front, .back {
 	background: #CCC;
-	-webkit-transform-style: preserve-3d;
-	-webkit-backface-visibility: hidden;
 	border-radius: 10px;
 }
 
-.primary {
+.front {
 	overflow: hidden;
+	width: 200px;
+	height: 200px;
 }
 
-.secondary {
+.back {
 	padding: 20px;
 	width: 160px;
 	height: 160px;
-}
-
-.secondary h2 {
-	margin-top: 0px;
 }
