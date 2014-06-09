@@ -1,0 +1,15 @@
+main {
+  max-width: 960px;
+  margin: auto;
+}
+
+.editable:hover {
+  color: #666;
+  background-color: #EEE;
+}
+
+.edit-input {
+  display: block;
+  width: 100%;
+}
+
