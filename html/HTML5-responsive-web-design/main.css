@@ -1,0 +1,58 @@
+/* Set main content elements to have a maximum width and be centered */
+header,
+main {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Force nav to be block level */
+nav {
+  display: block;
+}
+
+/* Reset the UL styles in nav elements */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  /* Use inline-block to allow padding control but also utilize inline layout */
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+img {
+  /* Ensure that no image can ever be larger than its container */
+  max-width: 100%;
+}
+
+.gallery img {
+  /* Give gallery images a little breathing room */
+  margin: 5px;
+}
+
+
+/* Responsive Media Queries */
+@media screen and (max-width: 960px){
+  header,
+  main {
+    /* Give content some breathing room on smaller screens */
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav li {
+    /* On smaller screens, stack the navigation items vertically */
+    display: block;
+    width: 100%;
+  }
+  .gallery img {
+    /* On smaller screens, stack gallery images vertically */
+    display: block;
+    margin: 5px auto;
+  }
+}
