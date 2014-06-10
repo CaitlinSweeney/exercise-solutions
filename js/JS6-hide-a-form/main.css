@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+}
+
+#edit {
+  background: #CCC;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+#edit.active {
+  height: 400px;
+  padding: 20px;
+}

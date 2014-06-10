@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hide-A-Form</title>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+    <main>
+      
+      <section id="edit">
+        <h1>Edit</h1>
+        <form id="edit-form">
+          <div class="input-group">
+            <label>Name:</label>
+            <input type="text" id="name-edit">
+          </div>
+          <div class="input-group">
+            <label>Bio:</label>
+            <input type="text" id="bio-edit">
+          </div>
+          <div class="input-group">
+            <label>Favorite Books:</label>
+            <input type="text" id="books-edit">
+          </div>
+          <div class="input-group">
+            <label>Favorite Javascript Libraries:</label>
+            <input type="text" id="js-edit">
+          </div>
+          <div class="input-group">
+            <input type="submit" value="Save">
+          </div>
+        </form>
+      </section>
+
+      <section id="profile">
+        <h1>Profile</h1>
+        <button id="toggle-edit">Edit</button>
+        <div class="value-group">
+          <h4>Name:</h4>
+          <p id="name-value"></p>
+        </div>
+        <div class="value-group">
+          <h4>Bio:</h4>
+          <p id="bio-value"></p>
+        </div>
+        <div class="value-group">
+          <h4>Favorite Books:</h4>
+          <p id="books-value"></p>
+        </div>
+        <div class="value-group">
+          <h4>Favorite Javascript Libraries:</h4>
+          <p id="js-value"></p>
+        </div>
+      </section>
+
+    </main>
+  	
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
