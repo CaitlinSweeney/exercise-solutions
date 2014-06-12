@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  nav
+    a(href="/") Home
+    a(href="/winner") Winner
+
+  //- Render video 1 on the left.
+  .video.left
+    h2= video1.title
+    iframe(src='//www.youtube.com/embed/' + video1.youtubeid, frameborder="0", allowfullscreen)
+    a.vote(href="/vote/" + video1.youtubeid) Vote!
+
+  //- And video 2 on the right.
+  .video.right
+    h2= video2.title
+    iframe(src='//www.youtube.com/embed/' + video2.youtubeid, frameborder="0", allowfullscreen)
+    a.vote(href="/vote/" + video2.youtubeid) Vote!
+
+  //- Clicking either vote link will take the user to the vote route with the given youtube id

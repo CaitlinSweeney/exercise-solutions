@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  nav
+    a(href="/") Home
+    a(href="/winner") Winner
+
+  //- If there is only one submission remaining, it is the winner
+  if allSubmissions.length === 1
+    h1 Winner!
+    h2 #{allSubmissions[0].title} from #{allSubmissions[0].name}
+    iframe(src='//www.youtube.com/embed/' + allSubmissions[0].youtubeid, frameborder="0", allowfullscreen)
+
+    p: a(href="/reset") New Contest?
+
+  else
+    
+    //- If there is more than one remaining, this is technically a round...
+
+    h1 Round Complete
+    h2 Survivors
+    for submission in remainingSubmissions
+      h4= submission.title
+      iframe(src='//www.youtube.com/embed/' + submission.youtubeid, frameborder="0", allowfullscreen)
+
+    h2 Round Losers
+    for submission in removedSubmissions
+      h4= submission.title
+      iframe(src='//www.youtube.com/embed/' + submission.youtubeid, frameborder="0", allowfullscreen)

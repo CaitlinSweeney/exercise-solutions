@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  //- If we are accepting submissions, show the new entry form
+  if acceptingSubmissions
+    form(method="post", action="/submit-entry")
+      .input-group
+        label Name:
+        input(type="text", name="name")
+      .input-group
+        label Youtube Url:
+        input(type="text", name="url")
+      .input-group
+        label Video Title:
+        input(type="text", name="title")
+      .input-group
+        label Description:
+        input(type="text", name="description")
+      .input-group
+        input(type="submit")
+  else
+    //- If not accepting new submissions, give the user a link to the vote page
+    h1 No longer accepting submissions!
+    p: a(href='/vote') Click here to vote
