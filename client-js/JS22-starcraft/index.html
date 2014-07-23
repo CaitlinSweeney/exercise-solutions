@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Starcraft Rankings</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <h1>StarCraft Rankings:</h1>
+  <div class="header">
+
+    <form class="filter">
+      <h3>Filter:</h3>
+
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+      </div>
+
+      <div class="input-group">
+        <label for="fullname">Fullname:</label>
+        <input type="text" name="fullname" id="fullname">
+      </div>
+
+      <div class="input-group">
+        <label for="region">Region:</label>
+        <select name="region" id="region"></select>
+      </div>
+
+      <div class="input-group">
+        <label for="race">Race:</label>
+        <select name="race" id="race"></select>
+      </div>
+
+      <div class="input-group">
+        <label for=""></label>
+        <input type="submit" value="Filter">
+        <button type="button" class="reset">Reset</button>
+      </div>
+    </form>
+
+    <div class="stats">
+      <h3>Stats:</h3>
+      <div><label for="">Total Players:</label> <span id="total-players" class="value"></span></div>
+      <div><label for="">Total Games:</label> <span id="total-games" class="value"></span></div>
+      <div><label for="">Race Popularity:</label> <span id="race-popularity" class="value"></span></div>
+    </div>
+  </div>
+
+  <div class="pagination"></div>
+  <table id="list">
+    <thead><tr></tr></thead>
+    <tbody></tbody>
+  </table>
+  <div class="pagination"></div>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
