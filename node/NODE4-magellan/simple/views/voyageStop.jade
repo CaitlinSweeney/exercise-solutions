@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  h1= location.title
+  p= location.description
+  a(href='/#{location.next}') Next
