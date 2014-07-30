@@ -1,0 +1,20 @@
+.slideshow {
+  width: 960px;
+  height: 400px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.slideshow nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
