@@ -1,0 +1,1422 @@
+[{
+  "name": "Afghanistan", 
+  "frenchName": "Afghanistan", 
+  "localName": "Afghanestan", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Albania", 
+  "frenchName": "Albanie", 
+  "localName": "Shqiperia", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Algeria", 
+  "frenchName": "AlgÃ©rie", 
+  "localName": "Al Jaza'ir", 
+  "region": "Northern Africa"
+},
+{
+  "name": "American Samoa", 
+  "frenchName": "Samoa AmÃ©ricaines", 
+  "localName": "American Samoa", 
+  "region": "Polynesia, Oceania"
+},
+{
+  "name": "Andorra", 
+  "frenchName": "Andorre", 
+  "localName": "Andorra", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Angola", 
+  "frenchName": "Angola", 
+  "localName": "Angola", 
+  "region": "Central Africa"
+},
+{
+  "name": "Anguilla", 
+  "frenchName": "Anguilla", 
+  "localName": "Anguilla", 
+  "region": "Leeward Islands, Caribbean"
+},
+{
+  "name": "Antarctica", 
+  "frenchName": "Antarctique", 
+  "localName": "Antarctica", 
+  "region": "Antarctica"
+},
+{
+  "name": "Antigua and Barbuda", 
+  "frenchName": "Antigua-et-Barbuda", 
+  "localName": "Antigua and Barbuda", 
+  "region": "Leeward Islands, Caribbean"
+},
+{
+  "name": "Argentina", 
+  "frenchName": "Argentine", 
+  "localName": "Argentina", 
+  "region": "Southern South America"
+},
+{
+  "name": "Armenia", 
+  "frenchName": "ArmÃ©nie", 
+  "localName": "Hayastan", 
+  "region": "Western Asia"
+},
+{
+  "name": "Aruba", 
+  "frenchName": "Aruba", 
+  "localName": "Aruba", 
+  "region": "Leeward Islands, Caribbean"
+},
+{
+  "name": "Australia", 
+  "frenchName": "Australie", 
+  "localName": "Australia", 
+  "region": "Australia"
+},
+{
+  "name": "Austria", 
+  "frenchName": "Autriche", 
+  "localName": "Ã–sterreich", 
+  "region": "Western Europe"
+},
+{
+  "name": "Azerbaijan", 
+  "frenchName": "AzerbaÃ¯djan", 
+  "localName": "Azarbaycan", 
+  "region": "Caucasus, Western Asia"
+},
+{
+  "name": "Bahamas", 
+  "frenchName": "Bahamas", 
+  "localName": "Bahamas", 
+  "region": "Caribbean"
+},
+{
+  "name": "Bahrain", 
+  "frenchName": "BahreÃ¯n", 
+  "localName": "Al Bahrayn", 
+  "region": "Arabian Peninsula, Middle East"
+},
+{
+  "name": "Bangladesh", 
+  "frenchName": "Bangladesh", 
+  "localName": "Bangladesh", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Barbados", 
+  "frenchName": "Barbade", 
+  "localName": "Barbados", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Belarus", 
+  "frenchName": "BÃ©larus", 
+  "localName": "Byelarus", 
+  "region": "Eastern Europe"
+},
+{
+  "name": "Belgium", 
+  "frenchName": "Belgique", 
+  "localName": "Belgique/Belgie", 
+  "region": "Western Europe"
+},
+{
+  "name": "Belize", 
+  "frenchName": "Belize", 
+  "localName": "Belize", 
+  "region": "Central America"
+},
+{
+  "name": "Benin", 
+  "frenchName": "BÃ©nin", 
+  "localName": "Benin", 
+  "region": "West Africa"
+},
+{
+  "name": "Bermuda", 
+  "frenchName": "Bermudes", 
+  "localName": "Bermuda", 
+  "region": "North America"
+},
+{
+  "name": "Bhutan", 
+  "frenchName": "Bhoutan", 
+  "localName": "Bhutan", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Bolivia", 
+  "frenchName": "Bolivie", 
+  "localName": "Bolivia", 
+  "region": "Central South America"
+},
+{
+  "name": "Bosnia and Herzegovina", 
+  "frenchName": "Bosnie-HerzÃ©govine", 
+  "localName": "Bosna i Hercegovina", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Botswana", 
+  "frenchName": "Botswana", 
+  "localName": "Botswana", 
+  "region": "Southern Africa"
+},
+{
+  "name": "Brazil", 
+  "frenchName": "BrÃ©sil", 
+  "localName": "Brasil", 
+  "region": "Central Eastern South America"
+},
+{
+  "name": "Brunei Darussalam", 
+  "frenchName": "BrunÃ©i Darussalam", 
+  "localName": "Negara Brunei Darussalam", 
+  "region": "Southeast Asia"
+},
+{
+  "name": "Bulgaria", 
+  "frenchName": "Bulgarie", 
+  "localName": "Bulgaria", 
+  "region": "Eastern Europe"
+},
+{
+  "name": "Burkina Faso", 
+  "frenchName": "Burkina Faso", 
+  "localName": "Burkina Faso", 
+  "region": "West Africa"
+},
+{
+  "name": "Burundi", 
+  "frenchName": "Burundi", 
+  "localName": "Burundi", 
+  "region": "Eastern Africa, African Great Lakes"
+},
+{
+  "name": "Cambodia", 
+  "frenchName": "Cambodge", 
+  "localName": "Kampuchea", 
+  "region": "South-East Asia"
+},
+{
+  "name": "Cameroon", 
+  "frenchName": "Cameroun", 
+  "localName": "Cameroon", 
+  "region": "Central Africa"
+},
+{
+  "name": "Canada", 
+  "frenchName": "Canada", 
+  "localName": "Canada", 
+  "region": "North North America"
+},
+{
+  "name": "Cape Verde", 
+  "frenchName": "Cap-Vert", 
+  "localName": "Cabo Verde", 
+  "region": "West Africa"
+},
+{
+  "name": "Cayman Islands", 
+  "frenchName": "CaÃ¯manes", 
+  "localName": "ÃŽles", 
+  "region": "Cayman Islands,  Greater Antilles, Caribbean"
+},
+{
+  "name": "Central African Republic", 
+  "frenchName": "Centrafricaine", 
+  "localName": "RÃ©publique", 
+  "region": "Republique Centrafricaine, Central Africa"
+},
+{
+  "name": "Chad", 
+  "frenchName": "Tchad", 
+  "localName": "Tchad", 
+  "region": "Central Africa"
+},
+{
+  "name": "Chile", 
+  "frenchName": "Chili", 
+  "localName": "Chile", 
+  "region": "Western South America"
+},
+{
+  "name": "China", 
+  "frenchName": "Chine", 
+  "localName": "Zhong Guo", 
+  "region": "Eastern Asia"
+},
+{
+  "name": "Christmas Island",  
+  "frenchName": "ÃŽle Christmas", 
+  "localName": "Christmas Island", 
+  "region": "Southeast Asia"
+},
+{
+  "name": "Cocos (Keeling) Islands", 
+  "frenchName": "ÃŽles Cocos (Keeling)", 
+  "localName": "Cocos (Keeling) Islands", 
+  "region": "South-East Asia, Australia"
+},
+{
+  "name": "Colombia", 
+  "frenchName": "Colombie", 
+  "localName": "Colombia", 
+  "region": "North West South America"
+},
+{
+  "name": "Comoros", 
+  "frenchName": "Comores", 
+  "localName": "Comores", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Democratic Republic of the Congo (Kinshasa)", 
+  "frenchName": "Congo", 
+  "localName": "La RÃ©publique DÃ©mocratique du", 
+  "region": "RÃ©publique DÃ©mocratique du Congo, Central Africa"
+},
+{
+  "name": "Congo", 
+  "frenchName": "Republic of (Brazzaville)", 
+  "localName": "RÃ©publique du Congo", 
+  "region": "RÃ©publique du Congo, Central Africa"
+},
+{
+  "name": "Cook Islands", 
+  "frenchName": "ÃŽles Cook", 
+  "localName": "Cook Islands", 
+  "region": "Polynesia, Oceania"
+},
+{
+  "name": "Costa Rica", 
+  "frenchName": "Costa Rica", 
+  "localName": "Costa Rica", 
+  "region": "Central America"
+},
+{
+  "name": "Ivory Coast", 
+  "frenchName": "CÃ´te D'ivoire", 
+  "localName": "Cote d'Ivoire", 
+  "region": "West Africa"
+},
+{
+  "name": "Croatia", 
+  "frenchName": "Croatie", 
+  "localName": "Hrvatska", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Cuba", 
+  "frenchName": "Cuba", 
+  "localName": "Cuba", 
+  "region": "Greater Antilles, Caribbean"
+},
+{
+  "name": "Cyprus", 
+  "frenchName": "Chypre", 
+  "localName": "Kibris", 
+  "region": "Kypros, Mediterranean, Western Asia"
+},
+{
+  "name": "Czech Republic", 
+  "frenchName": "RÃ©publique TchÃ¨que", 
+  "localName": "Ceska Republika", 
+  "region": "Eastern Europe"
+},
+{
+  "name": "Denmark", 
+  "frenchName": "Danemark", 
+  "localName": "Danmark", 
+  "region": "Northern Europe"
+},
+{
+  "name": "Djibouti", 
+  "frenchName": "Djibouti", 
+  "localName": "Djibouti", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Dominica", 
+  "frenchName": "Dominique", 
+  "localName": "Dominica", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Dominican Republic", 
+  "frenchName": "Dominicaine", 
+  "localName": "RÃ©publique", 
+  "region": "Dominicana, Republica, Greater Antilles, Caribbean"
+},
+{
+  "name": "East Timor (Timor-Leste)", 
+  "frenchName": "Timor-Leste (Timor Oriental)", 
+  "localName": "Timor", 
+  "region": "South-East Asia"
+},
+{
+  "name": "Ecuador", 
+  "frenchName": "Ã‰quateur", 
+  "localName": "Ecuador", 
+  "region": "North West South America"
+},
+{
+  "name": "Egypt", 
+  "frenchName": "Ã‰gypte", 
+  "localName": "Misr", 
+  "region": "Africa, Middle East"
+},
+{
+  "name": "El Salvador", 
+  "frenchName": "El Salvador", 
+  "localName": "El Salvador", 
+  "region": "Central America"
+},
+{
+  "name": "Equatorial Guinea", 
+  "frenchName": "GuinÃ©e Ã‰quatoriale", 
+  "localName": "Guinea Ecuatorial", 
+  "region": "Central Africa"
+},
+{
+  "name": "Eritrea", 
+  "frenchName": "Ã‰rythrÃ©e", 
+  "localName": "Hagere Ertra", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Estonia", 
+  "frenchName": "Estonie", 
+  "localName": "Eesti Vabariik", 
+  "region": "Northern Europe"
+},
+{
+  "name": "Ethiopia", 
+  "frenchName": "Ã‰thiopie", 
+  "localName": "Ityop'iya", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Falkland Islands", 
+  "frenchName": "Falkland", 
+  "localName": "ÃŽles (Malvinas)", 
+  "region": "Islas Malvinas, Southern South America"
+},
+{
+  "name": "Faroe Islands", 
+  "frenchName": "ÃŽles FÃ©roÃ©", 
+  "localName": "Foroyar", 
+  "region": "Northern Europe"
+},
+{
+  "name": "Fiji", 
+  "frenchName": "Fidji", 
+  "localName": "Fiji", 
+  "region": "Melanesia, Oceania"
+},
+{
+  "name": "Finland", 
+  "frenchName": "Finlande", 
+  "localName": "Suomen Tasavalta", 
+  "region": "Northern Europe"
+},
+{
+  "name": "France", 
+  "frenchName": "France", 
+  "localName": "France", 
+  "region": "Western Europe"
+},
+{
+  "name": "frenchName Guiana", 
+  "frenchName": "Guyane FranÃ§aise", 
+  "localName": "Guyane", 
+  "region": "Northern South America"
+},
+{
+  "name": "frenchName Polynesia", 
+  "frenchName": "PolynÃ©sie FranÃ§aise", 
+  "localName": "PolynÃ©sie FranÃ§aise", 
+  "region": "Polynesia, Oceania"
+},
+{
+  "name": "frenchName Southern Territories", 
+  "frenchName": "Terres Australes FranÃ§aises", 
+  "localName": "Terres Australes et Antarctiques FranÃ§aises", 
+  "region": "Southern South America, Antarctic"
+},
+{
+  "name": "Gabon", 
+  "frenchName": "Gabon", 
+  "localName": "Gabon", 
+  "region": "Central Africa"
+},
+{
+  "name": "Gambia", 
+  "frenchName": "Gambie", 
+  "localName": "The Gambia", 
+  "region": "West Africa"
+},
+{
+  "name": "Georgia", 
+  "frenchName": "GÃ©orgie", 
+  "localName": "Sak'art'velo", 
+  "region": "Western Asia"
+},
+{
+  "name": "Germany", 
+  "frenchName": "Allemagne", 
+  "localName": "Deutschland", 
+  "region": "Western Europe"
+},
+{
+  "name": "Ghana", 
+  "frenchName": "Ghana", 
+  "localName": "Ghana", 
+  "region": "West Africa"
+},
+{
+  "name": "Gibraltar", 
+  "frenchName": "Gibraltar", 
+  "localName": "Gibraltar", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Great Britain", 
+  "frenchName": "Grande-Bretagne", 
+  "localName": "Great Britain", 
+  "region": " Northern Europe"
+},
+{
+  "name": "Greece", 
+  "frenchName": "GrÃ¨ce", 
+  "localName": "Ellas or Ellada", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Greenland", 
+  "frenchName": "Groenland", 
+  "localName": "Kalaallit Nunaat", 
+  "region": "North America"
+},
+{
+  "name": "Grenada", 
+  "frenchName": "Grenade", 
+  "localName": "Grenada", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Guadeloupe", 
+  "frenchName": "Guadeloupe", 
+  "localName": "Guadeloupe", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Guam", 
+  "frenchName": "Guam", 
+  "localName": "Guam", 
+  "region": "Micronesia, Oceania"
+},
+{
+  "name": "Guatemala", 
+  "frenchName": "Guatemala", 
+  "localName": "Guatemala", 
+  "region": "Central America"
+},
+{
+  "name": "Guinea", 
+  "frenchName": "GuinÃ©ee", 
+  "localName": "Guinee", 
+  "region": "West Africa"
+},
+{
+  "name": "Guinea-Bissau", 
+  "frenchName": "GuinÃ©e-Bissau", 
+  "localName": "Guine-Bissau", 
+  "region": "West Africa"
+},
+{
+  "name": "Guyana", 
+  "frenchName": "Guyana", 
+  "localName": "Guyana", 
+  "region": "North Eastern South America"
+},
+{
+  "name": "Haiti", 
+  "frenchName": "HaÃ¯ti", 
+  "localName": "Haiti", 
+  "region": "Greater Antilles, Caribbean"
+},
+{
+  "name": "Holy See", 
+  "frenchName": "Saint-SiÃ¨ge (Ã‰tat de la CitÃ© du Vatican)", 
+  "localName": "Status Civitatis VaticanÃ¦", 
+  "region": "Southern Europe within Italy"
+},
+{
+  "name": "Honduras", 
+  "frenchName": "Honduras", 
+  "localName": "Honduras", 
+  "region": "Central America"
+},
+{
+  "name": "Hong Kong", 
+  "frenchName": "Hong-Kong", 
+  "localName": "Xianggang", 
+  "region": "Eastern Asia"
+},
+{
+  "name": "Hungary", 
+  "frenchName": "Hongrie", 
+  "localName": "Magyarorszag", 
+  "region": "Eastern Europe"
+},
+{
+  "name": "Iceland", 
+  "frenchName": "Islande", 
+  "localName": "Lyoveldio Island", 
+  "region": "Northern Europe"
+},
+{
+  "name": "India", 
+  "frenchName": "Inde", 
+  "localName": "Bharat", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Indonesia", 
+  "frenchName": "IndonÃ©sie", 
+  "localName": "Indonesia", 
+  "region": "Maritime South-East Asia"
+},
+{
+  "name": "Iran (Islamic Republic of)", 
+  "frenchName": "RÃ©publique Islamique d' Iran", 
+  "localName": "Iran", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Iraq", 
+  "frenchName": "Iraq", 
+  "localName": "Iraq", 
+  "region": "Middle East, Western Asia"
+},
+{
+  "name": "Ireland", 
+  "frenchName": "Irlande", 
+  "localName": "Ã‰ire", 
+  "region": "Northern Europe"
+},
+{
+  "name": "Israel", 
+  "frenchName": "IsraÃ«l", 
+  "localName": "Yisra'el", 
+  "region": "Middle East, Western Asia"
+},
+{
+  "name": "Italy", 
+  "frenchName": "Italie", 
+  "localName": "Italia", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Jamaica", 
+  "frenchName": "JamaÃ¯que", 
+  "localName": "Jamaica", 
+  "region": "Greater Antilles, Caribbean"
+},
+{
+  "name": "Japan", 
+  "frenchName": "Japon", 
+  "localName": "Nippon", 
+  "region": "Eastern Asia"
+},
+{
+  "name": "Jordan", 
+  "frenchName": "Jordanie", 
+  "localName": "Al Urdun", 
+  "region": "Middle East, Western Asia"
+},
+{
+  "name": "Kazakhstan", 
+  "frenchName": "Kazakstan", 
+  "localName": "Qazaqstan", 
+  "region": "Central Asia"
+},
+{
+  "name": "Kenya", 
+  "frenchName": "Kenya", 
+  "localName": "Kenya", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Kiribati", 
+  "frenchName": "Kiribati", 
+  "localName": "Kiribati", 
+  "region": "Kiribas, Micronesia, Oceania"
+},
+{
+  "name": "Korea", 
+  "frenchName": "Democratic People's Rep. (North Korea)", 
+  "localName": "CorÃ©e", 
+  "region": "RÃ©publique Populaire DÃ©mocratique de, Choson, Eastern Asia"
+},
+{
+  "name": "Korea", 
+  "frenchName": "Republic of (South Korea)", 
+  "localName": "CorÃ©e", 
+  "region": "RÃ©publique de, Han-guk, Eastern Asia"
+},
+{
+  "name": "Kosovo", 
+  "frenchName": "Kosovo", 
+  "localName": "Kosovo, ÐšÐ¾ÑÐ¾Ð²Ð¾", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Kuwait", 
+  "frenchName": "KoweÃ¯t", 
+  "localName": "Al Kuwayt", 
+  "region": "Middle East, Western Asia"
+},
+{
+  "name": "Kyrgyzstan", 
+  "frenchName": "Kirghizistan", 
+  "localName": "Kyrgyz Respublikasy", 
+  "region": "Central Asia"
+},
+{
+  "name": "Lao", 
+  "frenchName": "People's Democratic Republic", 
+  "localName": "Lao", 
+  "region": "RÃ©publique DÃ©mocratique Populaire, Lao, South-East Asia"
+},
+{
+  "name": "Latvia", 
+  "frenchName": "Lettonie", 
+  "localName": "Latvija", 
+  "region": "Northern Europe"
+},
+{
+  "name": "Lebanon", 
+  "frenchName": "Liban", 
+  "localName": "Lubnan", 
+  "region": "Middle East, Western Asia"
+},
+{
+  "name": "Lesotho", 
+  "frenchName": "Lesotho", 
+  "localName": "Lesotho", 
+  "region": "Southern Africa"
+},
+{
+  "name": "Liberia", 
+  "frenchName": "LibÃ©ria", 
+  "localName": "Liberia", 
+  "region": "West Africa"
+},
+{
+  "name": "Libya", 
+  "frenchName": "Libye", 
+  "localName": "Libiyah", 
+  "region": "Northern Africa"
+},
+{
+  "name": "Liechtenstein", 
+  "frenchName": "Liechtenstein", 
+  "localName": "Liechtenstein", 
+  "region": "Western Europe"
+},
+{
+  "name": "Lithuania", 
+  "frenchName": "Lituanie", 
+  "localName": "Lietuva", 
+  "region": "Northern Europe"
+},
+{
+  "name": "Luxembourg", 
+  "frenchName": "Luxembourg", 
+  "localName": "Luxembourg", 
+  "region": "Letzebuerg, Western Europe"
+},
+{
+  "name": "Macau", 
+  "frenchName": "Macao", 
+  "localName": "Aomen", 
+  "region": "Eastern Asia"
+},
+{
+  "name": "Macedonia", 
+  "frenchName": "Rep. of", 
+  "localName": "MacÃ©doine", 
+  "region": "l'ex-RÃ©publique Yougoslave de, Makedonija, Southern Europe"
+},
+{
+  "name": "Madagascar", 
+  "frenchName": "Madagascar", 
+  "localName": "Madagascar", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Malawi", 
+  "frenchName": "Malawi", 
+  "localName": "Malawi", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Malaysia", 
+  "frenchName": "Malaisie", 
+  "localName": "Malaysia", 
+  "region": "Southeast Asia"
+},
+{
+  "name": "Maldives", 
+  "frenchName": "Maldives", 
+  "localName": "Dhivehi Raajje", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Mali", 
+  "frenchName": "Mali", 
+  "localName": "Mali", 
+  "region": "West Africa"
+},
+{
+  "name": "Malta", 
+  "frenchName": "Malte", 
+  "localName": "Malta", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Marshall Islands", 
+  "frenchName": "ÃŽles Marshall", 
+  "localName": "Marshall Islands", 
+  "region": "Micronesia, Oceania"
+},
+{
+  "name": "Martinique", 
+  "frenchName": "Martinique", 
+  "localName": "Martinique", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Mauritania", 
+  "frenchName": "Mauritanie", 
+  "localName": "Muritaniyah", 
+  "region": "West Africa"
+},
+{
+  "name": "Mauritius", 
+  "frenchName": "ÃŽle Maurice", 
+  "localName": "Mauritius", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Mayotte", 
+  "frenchName": "Mayotte", 
+  "localName": "Mayotte", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Mexico", 
+  "frenchName": "Mexique", 
+  "localName": "Estados Unidos Mexicanos", 
+  "region": "North America"
+},
+{
+  "name": "Micronesia", 
+  "frenchName": "Federal States of", 
+  "localName": "Ã‰tats FÃ©dÃ©rÃ©s de MicronÃ©sie", 
+  "region": "Micronesia, Micronesia, Oceania"
+},
+{
+  "name": "Moldova", 
+  "frenchName": "Republic of", 
+  "localName": "Moldova", 
+  "region": "RÃ©publique de, Moldova, Eastern Europe"
+},
+{
+  "name": "Monaco", 
+  "frenchName": "Monaco", 
+  "localName": "Monaco", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Mongolia", 
+  "frenchName": "Mongolie", 
+  "localName": "Mongol Uls", 
+  "region": "Eastern Asia"
+},
+{
+  "name": "Montenegro", 
+  "frenchName": "MontÃ©nÃ©gro", 
+  "localName": "Crna Gora", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Montserrat", 
+  "frenchName": "Montserrat", 
+  "localName": "Montserrat", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Morocco", 
+  "frenchName": "Maroc", 
+  "localName": "Al Maghrib", 
+  "region": "Northern Africa"
+},
+{
+  "name": "Mozambique", 
+  "frenchName": "Mozambique", 
+  "localName": "Mocambique", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Myanmar", 
+  "frenchName": "Burma", 
+  "localName": "Myanmar", 
+  "region": "Birmanie, Myanma Naingngandaw, Southeast Asia"
+},
+{
+  "name": "Namibia", 
+  "frenchName": "Namibie", 
+  "localName": "Namibia", 
+  "region": "Southern Africa"
+},
+{
+  "name": "Nauru", 
+  "frenchName": "Nauru", 
+  "localName": "Nauru", 
+  "region": "Micronesia, Oceania"
+},
+{
+  "name": "Nepal", 
+  "frenchName": "NÃ©pal", 
+  "localName": "Nepal", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Netherlands", 
+  "frenchName": "Pays-Bas", 
+  "localName": "Nederland/Holland", 
+  "region": "Western Europe"
+},
+{
+  "name": "Netherlands Antilles", 
+  "frenchName": "Antilles NÃ©erlandaises", 
+  "localName": "Nederlandse Antillen", 
+  "region": "Caribbean"
+},
+{
+  "name": "New Caledonia", 
+  "frenchName": "Nouvelle-CalÃ©donie", 
+  "localName": "Nouvelle-CalÃ©donie", 
+  "region": "Melanesia, Oceania"
+},
+{
+  "name": "New Zealand", 
+  "frenchName": "Nouvelle-ZÃ©lande", 
+  "localName": "Aotearoa", 
+  "region": "Oceania; Australia"
+},
+{
+  "name": "Nicaragua", 
+  "frenchName": "Nicaragua", 
+  "localName": "Nicaragua", 
+  "region": "Central America"
+},
+{
+  "name": "Niger", 
+  "frenchName": "Niger", 
+  "localName": "Niger", 
+  "region": "West Africa"
+},
+{
+  "name": "Nigeria", 
+  "frenchName": "NigÃ©ria", 
+  "localName": "Nigeria", 
+  "region": "West Africa"
+},
+{
+  "name": "Niue", 
+  "frenchName": "NiouÃ©", 
+  "localName": "Niue", 
+  "region": "Polynesia, Oceania"
+},
+{
+  "name": "Northern Mariana Islands", 
+  "frenchName": "ÃŽles Mariannes du Nord", 
+  "localName": "Northern Mariana Islands", 
+  "region": "Micronesia, Oceania"
+},
+{
+  "name": "Norway", 
+  "frenchName": "NorvÃ¨ge", 
+  "localName": "Norge", 
+  "region": "Northern Europe"
+},
+{
+  "name": "Oman", 
+  "frenchName": "Oman", 
+  "localName": "Saltanat Uman", 
+  "region": "Middle East"
+},
+{
+  "name": "Pakistan", 
+  "frenchName": "Pakistan", 
+  "localName": "Pakistan", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Palau", 
+  "frenchName": "Palaos", 
+  "localName": "Belau", 
+  "region": "Micronesia, Oceania"
+},
+{
+  "name": "Palestinian territories", 
+  "frenchName": "AutoritÃ© Nationale Palestinienne", 
+  "localName": "Filastin", 
+  "region": "Middle East, Western Asia"
+},
+{
+  "name": "Panama", 
+  "frenchName": "Panama", 
+  "localName": "Panama", 
+  "region": "Central America"
+},
+{
+  "name": "Papua New Guinea", 
+  "frenchName": "Papouasie-Nouvelle-GuinÃ©e", 
+  "localName": "Papua Niu Gini", 
+  "region": "Maritime Southeast Asia, Melanesia, Oceania"
+},
+{
+  "name": "Paraguay", 
+  "frenchName": "Paraguay", 
+  "localName": "Paraguay", 
+  "region": "Central South America"
+},
+{
+  "name": "Peru", 
+  "frenchName": "PÃ©rou", 
+  "localName": "Peru", 
+  "region": "Western South America"
+},
+{
+  "name": "Philippines", 
+  "frenchName": "Philippines", 
+  "localName": "Pilipinas", 
+  "region": "Southeast Asia"
+},
+{
+  "name": "Pitcairn Island", 
+  "frenchName": "Pitcairn", 
+  "localName": "Pitcairn Island", 
+  "region": "Polynesia, Oceania"
+},
+{
+  "name": "Poland", 
+  "frenchName": "Pologne", 
+  "localName": "Polska", 
+  "region": "Eastern Europe"
+},
+{
+  "name": "Portugal", 
+  "frenchName": "Portugal", 
+  "localName": "Portugal", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Puerto Rico", 
+  "frenchName": "Porto Rico", 
+  "localName": "Puerto Rico", 
+  "region": "Greater Antilles, Caribbean"
+},
+{
+  "name": "Qatar", 
+  "frenchName": "Qatar", 
+  "localName": "Dawlat Qatar", 
+  "region": "Arabian Peninsula, Middle East"
+},
+{
+  "name": "Reunion Island", 
+  "frenchName": "Ile de la RÃ©union", 
+  "localName": "Ile de la RÃ©union", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Romania", 
+  "frenchName": "Roumanie", 
+  "localName": "Romania", 
+  "region": "Eastern Europe"
+},
+{
+  "name": "Russian Federation", 
+  "frenchName": "Russie", 
+  "localName": "FÃ©dÃ©ration de", 
+  "region": "Rossiya, Eastern Europe - Northern Asia"
+},
+{
+  "name": "Rwanda", 
+  "frenchName": "Rwanda", 
+  "localName": "Rwanda", 
+  "region": "Eastern Africa, African Great Lakes"
+},
+{
+  "name": "Saint Kitts and Nevis", 
+  "frenchName": "Saint-Kitts-et-Nevis", 
+  "localName": " ", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Saint Lucia", 
+  "frenchName": "Sainte-Lucie", 
+  "localName": "Saint Lucia", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Saint Vincent and the Grenadines", 
+  "frenchName": "Saint-Vincent-et-les Grenadines", 
+  "localName": " ", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Samoa", 
+  "frenchName": "Samoa", 
+  "localName": "Samoa", 
+  "region": "Polynesia, Oceania"
+},
+{
+  "name": "San Marino", 
+  "frenchName": "Saint-Marin", 
+  "localName": "San Marino", 
+  "region": "Southern Europe within Italy"
+},
+{
+  "name": "Sao Tome and Principe", 
+  "frenchName": "Sao TomÃ©-et-Principe", 
+  "localName": "Sao Tome e Principe", 
+  "region": "Central Africa"
+},
+{
+  "name": "Saudi Arabia", 
+  "frenchName": "Arabie Saoudite", 
+  "localName": "Al Arabiyah as Suudiyah", 
+  "region": "Arabian Peninsula, Middle East"
+},
+{
+  "name": "Senegal", 
+  "frenchName": "SÃ©nÃ©gal", 
+  "localName": "Senegal", 
+  "region": "West Africa"
+},
+{
+  "name": "Serbia", 
+  "frenchName": "Serbie", 
+  "localName": "Srbija", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Seychelles", 
+  "frenchName": "Seychelles", 
+  "localName": "Seychelles", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Sierra Leone", 
+  "frenchName": "Sierra Leone", 
+  "localName": "Sierra Leone", 
+  "region": "West Africa"
+},
+{
+  "name": "Singapore", 
+  "frenchName": "Singapour", 
+  "localName": "Singapore", 
+  "region": "Southeast Asia"
+},
+{
+  "name": "Slovakia (Slovak Republic)", 
+  "frenchName": "Slovaquie", 
+  "localName": "Slovensko", 
+  "region": "Eastern Europe"
+},
+{
+  "name": "Slovenia", 
+  "frenchName": "SlovÃ©nie", 
+  "localName": "Slovenija", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Solomon Islands", 
+  "frenchName": "Salomon", 
+  "localName": "ÃŽles", 
+  "region": "Solomon Islands, Melanesia, Oceania"
+},
+{
+  "name": "Somalia", 
+  "frenchName": "Somalie", 
+  "localName": "Somalia", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "South Africa", 
+  "frenchName": "Afrique du Sud", 
+  "localName": "South Africa", 
+  "region": "Southern Africa"
+},
+{
+  "name": "South Sudan", 
+  "frenchName": "Soudan du Sud", 
+  "localName": "South Sudan", 
+  "region": " East-Central Africa"
+},
+{
+  "name": "Spain", 
+  "frenchName": "Espagne", 
+  "localName": "EspaÃ±a", 
+  "region": "Southern Europe"
+},
+{
+  "name": "Sri Lanka", 
+  "frenchName": "Sri Lanka", 
+  "localName": "Sri Lanka", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Sudan", 
+  "frenchName": "Soudan", 
+  "localName": "As-Sudan", 
+  "region": "Northern Africa"
+},
+{
+  "name": "Suriname", 
+  "frenchName": "Suriname", 
+  "localName": "Suriname", 
+  "region": "North-Eastern South America"
+},
+{
+  "name": "Swaziland", 
+  "frenchName": "Swaziland", 
+  "localName": "Swaziland", 
+  "region": "Southern Africa"
+},
+{
+  "name": "Sweden", 
+  "frenchName": "SuÃ¨de", 
+  "localName": "Sverige", 
+  "region": "Northern Europe"
+},
+{
+  "name": "Switzerland", 
+  "frenchName": "Suisse", 
+  "localName": "Schweiz (German)", 
+  "region": "Suisse (frenchName), Svizzera (Italian), Western Europe"
+},
+{
+  "name": "Syria", 
+  "frenchName": "Syrian Arab Republic", 
+  "localName": "Syrienne", 
+  "region": "RÃ©publique Arabe, Suriyah, Middle East, Western Asia"
+},
+{
+  "name": "Taiwan (Republic of China)", 
+  "frenchName": "TaÃ¯wan", 
+  "localName": "Province de Chine", 
+  "region": "T'ai-wan, Eastern Asia"
+},
+{
+  "name": "Tajikistan", 
+  "frenchName": "Tadjikistan", 
+  "localName": "Jumhurii Tojikiston", 
+  "region": "Central Asia"
+},
+{
+  "name": "Tanzania; officially the United Republic of Tanzania", 
+  "frenchName": "Tanzanie", 
+  "localName": "RÃ©publique-Unie de", 
+  "region": "Jamhuri ya Muungano wa Tanzania, Eastern Africa"
+},
+{
+  "name": "Thailand", 
+  "frenchName": "ThaÃ¯lande", 
+  "localName": "Prathet Thai", 
+  "region": "South-East Asia"
+},
+{
+  "name": "Tibet", 
+  "frenchName": "Tibet", 
+  "localName": "Bod", 
+  "region": "South-Central Asia"
+},
+{
+  "name": "Timor-Leste (East Timor)", 
+  "frenchName": "Timor-Leste (Timor Oriental)", 
+  "localName": "Timor", 
+  "region": "Maritime South-East Asia"
+},
+{
+  "name": "Togo", 
+  "frenchName": "Togo", 
+  "localName": "Republique Togolaise", 
+  "region": "West Africa"
+},
+{
+  "name": "Tokelau", 
+  "frenchName": "Tokelau", 
+  "localName": "Tokelau", 
+  "region": "Oceania/Australia"
+},
+{
+  "name": "Tonga", 
+  "frenchName": "Tonga", 
+  "localName": "Tonga", 
+  "region": "Polynesia, Oceania"
+},
+{
+  "name": "Trinidad and Tobago", 
+  "frenchName": "TrinitÃ©-et-Tobago", 
+  "localName": "Trinidad", 
+  "region": "Tobago, Northern South America, Caribbean"
+},
+{
+  "name": "Tunisia", 
+  "frenchName": "Tunisie", 
+  "localName": "Tunis", 
+  "region": "Northern Africa"
+},
+{
+  "name": "Turkey", 
+  "frenchName": "Turquie", 
+  "localName": "Turkiye", 
+  "region": "Southeastern Europe, Western Asia"
+},
+{
+  "name": "Turkmenistan", 
+  "frenchName": "TurkmÃ©nistan", 
+  "localName": "Turkmenistan", 
+  "region": "Central Asia"
+},
+{
+  "name": "Turks and Caicos Islands", 
+  "frenchName": "Turks et CaÃ¯ques", 
+  "localName": "ÃŽles", 
+  "region": "Turks and Caicos Islands, Caribbean, parts of the Bahamas island chain."
+},
+{
+  "name": "Tuvalu", 
+  "frenchName": "Tuvalu", 
+  "localName": "Tuvalu", 
+  "region": "Polynesia, Oceania"
+},
+{
+  "name": "Uganda", 
+  "frenchName": "Ouganda", 
+  "localName": "Uganda", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Ukraine", 
+  "frenchName": "Ukraine", 
+  "localName": "Ukrayina", 
+  "region": "Eastern Europe"
+},
+{
+  "name": "United Arab Emirates", 
+  "frenchName": "Ã‰mirats Arabes Unis", 
+  "localName": "Al Imarat al Arabiyah al Muttahidah", 
+  "region": "Arabian Peninsula, Middle East"
+},
+{
+  "name": "United Kingdom", 
+  "frenchName": "Royaume-Uni", 
+  "localName": "United Kingdom", 
+  "region": "Northern Europe"
+},
+{
+  "name": "United States", 
+  "frenchName": "Ã‰tats-Unis", 
+  "localName": "United States", 
+  "region": "North America"
+},
+{
+  "name": "Uruguay", 
+  "frenchName": "Uruguay", 
+  "localName": "Republica Oriental del Uruguay", 
+  "region": "Central East South America"
+},
+{
+  "name": "Uzbekistan", 
+  "frenchName": "OuzbÃ©kistan", 
+  "localName": "Uzbekiston Respublikasi", 
+  "region": "Central Asia"
+},
+{
+  "name": "Vanuatu", 
+  "frenchName": "Vanuatu", 
+  "localName": "Vanuatu", 
+  "region": "Melanesia, Oceania"
+},
+{
+  "name": "Vatican City State (Holy See)", 
+  "frenchName": "Saint-SiÃ¨ge (Ã‰tat de la CitÃ© du Vatican)", 
+  "localName": "Status Civitatis VaticanÃ¦", 
+  "region": "Southern Europe within Italy"
+},
+{
+  "name": "Venezuela", 
+  "frenchName": "Venezuela", 
+  "localName": "Venezuela", 
+  "region": "Northern South America"
+},
+{
+  "name": "Vietnam", 
+  "frenchName": "ViÃªt Nam", 
+  "localName": "Viet Nam", 
+  "region": "South-East Asia"
+},
+{
+  "name": "Virgin Islands (British)", 
+  "frenchName": "ÃŽles Vierges Britanniques", 
+  "localName": "", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Virgin Islands (U.S.)", 
+  "frenchName": "ÃŽles Vierges des Ã‰tats-Unis", 
+  "localName": "Virgin Islands", 
+  "region": "Lesser Antilles, Caribbean"
+},
+{
+  "name": "Wallis and Futuna Islands", 
+  "frenchName": "Wallis et Futuna", 
+  "localName": "Wallis et Futuna", 
+  "region": "Polynesia, Oceania"
+},
+{
+  "name": "Western Sahara", 
+  "frenchName": "Sahara Occidental", 
+  "localName": "Aá¹£-á¹¢aá¸¥rÄâ€™ al-GharbÄ«yah", 
+  "region": "Northern Africa"
+},
+{
+  "name": "Yemen", 
+  "frenchName": "YÃ©men", 
+  "localName": "Al Yaman", 
+  "region": "Arabian Peninsula, Middle East"
+},
+{
+  "name": "Zambia", 
+  "frenchName": "Zambie", 
+  "localName": "Zambia", 
+  "region": "Eastern Africa"
+},
+{
+  "name": "Zimbabwe", 
+  "frenchName": "Zimbabwe", 
+  "localName": "Zimbabwe", 
+  "region": "Eastern Africa"
+}]

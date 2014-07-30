@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 AjaxCountries
+
+  //- Button to handle getting all countries
+  p: button#get-countries Get All Countries
+  
+  p
+    //- Fields to handle searching
+    h4 Search for Countries
+    input#country(type="text", name="country")
+    button#search Search
+
+  //- The placeholder for any countries to be rendered
+  ul#countries-list
