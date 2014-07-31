@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Technology Search
+
+  //- The search form
+  form#search-form
+    .form-group
+      input#search-text(type="text", placeholder="Search", name="search")
+  
+  //- Results placeholder
+  #result
+
+  //- Handlebars template for each item
+  script#result-template(type="text/x-handlebars-template").
+    <h1>{{title}}</h1>
+    <p>{{desc}}</h1>
