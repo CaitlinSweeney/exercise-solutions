@@ -1,0 +1,8 @@
+//- Handle each new question with this section. Will fill in with
+//- details about the question and prompt for an answer
+form#quiz-question.hidden.quiz-section
+  p Translate "<span id="question-word"></span>" into <span id="question-language"></span>
+  .form-group
+    input#question-translation(type="text", placeholder="Translation...", name="translation")
+  .form-group
+    input(type="submit", value="Submit")

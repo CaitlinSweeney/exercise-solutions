@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  section.translation
+    include partials/translation
+
+  section.quiz
+    h1 Quiz
+    //- Button to allow the user to reset all their data
+    //- and start from scratch.
+    p: em: a#reset(href='/reset') Reset my Data
+
+    include partials/quizStart
+
+    include partials/question
+
+    include partials/questionResults
+
+    include partials/quizResults
+
+    include partials/quizStats

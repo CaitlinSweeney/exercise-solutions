@@ -1,0 +1,15 @@
+//- If this user has already picked a language, render the "resume quiz" button
+if userLanguage
+  form#start-quiz.quiz-section
+    input(type="submit", value="Resume Quiz!")
+else
+  //- Otherwise, ask the user to pick a language to test
+  form#start-quiz.quiz-section
+    p Pick a language to test!
+    .form-group
+      select#quiz-language(name="language")
+        for language in languages
+          option(value=language.code)= language.name
+
+    .form-group
+      input(type="submit", value="Start Quiz!")

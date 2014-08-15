@@ -1,0 +1,16 @@
+//- Show the quick translation form
+h1 Translation
+form#translate
+  .form-group
+    input#word(type="text", placeholder="Word...", name="word")
+  .form-group
+    select#from(name="from")
+      for language in languages
+        option(value=language.code)= language.name
+    |  to 
+    select#to(name="to")
+      for language in languages
+        option(value=language.code)= language.name
+  .form-group
+    input(type="submit", value="Translate")
+#translation-result

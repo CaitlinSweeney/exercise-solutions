@@ -1,0 +1,8 @@
+//- Render the results of an analyzed answer and prompt
+//- user to go to the next question or the results if
+//- this is the end of the quiz
+#question-results.hidden.quiz-section
+  p <span id="result-message"></span> "<span id="result-original"></span>" in <span id="result-language"></span> is "<span id="result-answer"></span>"
+  p
+    a#next-question(href="/next-question") Next question
+    a.results.hidden(href="/results") Show results

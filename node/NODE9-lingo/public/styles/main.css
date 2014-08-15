@@ -1,0 +1,12 @@
+/* Helper for hiding elements */
+.hidden {
+  display: none;
+}
+
+/* Styles for the different kinds of error */
+.error.accent {
+  background: #FFFF00;
+}
+.error.missing {
+  background: #FF0000;
+}

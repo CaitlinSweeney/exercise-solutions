@@ -1,0 +1,14 @@
+//- Show the results of the entire quiz
+#quiz-results.hidden.quiz-section
+  h2 Results:
+  h3#quiz-result-message
+  p#quiz-result-passed
+  p: a#view-stats(href='/stats') View My Stats
+  #regular-quiz
+    a.new-quiz(href='/start', data-type='random') New quiz
+  #custom-quiz.hidden
+    ul
+      li: a.new-quiz(href='/start', data-type='random') New quiz (random)
+      li: a.new-quiz(href='/start', data-type='hardest') New quiz (hardest)
+      li: a.new-quiz(href='/start', data-type='least') New quiz (least practiced)
+      li: a.new-quiz(href='/start', data-type='recent') New quiz (most recent)

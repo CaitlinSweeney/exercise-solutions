@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "body-parser": "^1",
+    "express": "^4",
+    "jade": "^1",
+    "mongoose": "^3.8.14",
+    "node-beglobal": "0.0.1-3",
+    "random-words": "0.0.1",
+    "underscore": "^1.6.0"
+  }
+}
