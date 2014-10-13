@@ -1,0 +1,6 @@
+{
+  "name": "colors",
+  "dependencies": {
+    "request": "^2.45.0"
+  }
+}
