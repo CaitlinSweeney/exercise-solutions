@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1 Signup Form
+    form(method="post", action="/formsubmit")
+        input(type="email", name="email", placeholder="Email")
+        input(type="submit")
