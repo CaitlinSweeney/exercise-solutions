@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .container
+    h1 Applicants
+    p: a(href="/") Add another applicant
+    ul#applications.list-unstyled
+      each rec in applicantData
+        li Name: #{rec.name}
+          a.btn.btn-primary.view(href="/#{rec._id}") details
+          a.btn.btn-danger.delete(href='/deleteApplicant/#{rec._id}') delete
