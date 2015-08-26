@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
+  </head>
+  <body ng-controller="mainController">
+    <div class="main-container">
+        <p ng-mouseenter="mouseenter()" ng-mouseleave="mouseleave($event)" ng-class="{red: hovering}">{{welcome}}</p>
+        <script src="main.js"></script>
+        <button ng-click="write()">WRITE</button>
+        <h1 ng-if="surprise">Surprise!</h1>
+        <p>this is text{{punctuation}}</p>
+        <p>This is also text{{punctuation}}</p>
+        <p>THIS IS NOT TEXT{{punctuation}}</p>
+        <a ng-click="youSure($event)" ng-if="goToGoogle" href="http://google.com">google</a>
+        <button ng-click="showPopup()">Show popup</button>
+
+        <div class="editable-container">
+            <textarea ng-blur="toggleEditing()" ng-class="{none: !editing}" ng-model="profile"></textarea>
+            <p ng-class="{none :editing}" ng-click="toggleEditing()">{{profile}}</p>
+        </div>
+        <!-- end editable container -->
+        <form ng-submit="submitForm()">
+            <input ng-model="bio.name">
+            <input ng-model="bio.age">
+            <input type="submit" value="submit">
+        </form>
+        <p>{{printedBio.name}}</p>
+        <p>{{printedBio.age}}</p>
+
+    </div> 
+    <!-- end main container -->
+
+    <div ng-click="dismissPopup()" ng-class="{faded : !popup}" class="popup-background"></div>
+    <div ng-click="clickPopup()" ng-class="{faded : !popup}" class="popup">
+        Look at all this text, dude!
+        <button ng-click="dismissPopup()">OK, I get it.</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.red {
+    color: red;
+}
+
+.popup {
+    /*transition: all 2s;*/
+    position: fixed;
+    height: 50px;
+    background-color: pink;
+    top: 50vh;
+    left: 50vw;
+    transition: opacity 2s;
+}
+.popup-background {
+    position: fixed;
+    background-color: gray;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 2s;
+}
+.faded {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 2s, opacity 2s;
+}
+
+.none {
+    display: none;
+}
