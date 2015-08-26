@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
+
+  </head>
+  <body ng-controller="MainController">
+    <select ng-model="raceFilter">
+        <option value="">No Filter</option>
+        <option value="Zerg">Zerg</option>
+        <option value="Terran">Terran</option>
+        <option value="Protoss">Protoss</option>
+    </select>
+    <table>
+        <tr>
+            <th ng-click="sortDataBy($index)" ng-repeat="col in data.cols">{{col}}</th>
+        </tr>
+        <tr ng-repeat="row in data.data | filter : filterByRace | orderBy : sortOrder : asc | limitTo : perPage : (page-1) * perPage">
+            <td ng-repeat="datum in row">{{datum}}</td>
+        </tr>
+    </table>
+    <div class="pagination">
+        <button ng-click="changePage(-1)">Prev</button>
+        <button ng-click="changePage(1)">Next</button>
+        <div>{{page}}</div>
+    </div>
+
+    <script src="app.module.js"></script>
+    <script src="data.factory.js"></script>
+    <script src="main.controller.js"></script>
+  </body>
+</html>

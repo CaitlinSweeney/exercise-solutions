@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
+
+  </head>
+  <body ng-controller="mainController">
+    <form class="add-task" ng-show="addingATask" ng-submit="submitTask()">
+        <input ng-model="newTaskName" name="name">
+        <input ng-model="newTaskDescription" name="description">
+        <button type="submit">Add Task</button>
+    </form>
+
+    <div class="one-day" ng-click="addTask($index)" ng-repeat="day in days">
+        {{day.toDateString()}}
+        <div ng-click="stopProp($event)" ng-repeat="task in day.tasks">
+
+            <div ng-click="toggleEditing(task, $event)" ng-show="!task.editing">{{task.name}} - {{task.description}}</div>
+            <form ng-submit="toggleEditing(task, $event)" ng-show="task.editing">
+                <input ng-model="task.name"> - <input ng-model="task.description"><input type="submit" style="display:none;">
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

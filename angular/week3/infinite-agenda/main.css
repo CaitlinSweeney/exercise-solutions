@@ -1,0 +1,14 @@
+.one-day {
+    min-height: 100px;
+    font-size: 24px;
+    background-color: skyblue;
+    border: 2px solid black;
+}
+
+.add-task {
+    height: 200px;
+    width: 300px;
+    position: fixed;
+    right: 20px;
+    background-color:gray;
+}
