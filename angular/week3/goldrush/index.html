@@ -8,11 +8,11 @@
 
   </head>
   <body ng-controller="mainController">
-    <form ng-submit="addNote()" ng-show="addingANote" style="position:absolute; top:{{clickSpot[1]-20}}px; left:{{clickSpot[0]}}px;">
+    <form ng-submit="addNote()" ng-show="addingANote" style="position:absolute; top:{{clickSpot.y-6}}vh; left:{{clickSpot.x}}vw;">
         <input ng-model="noteInput">
         <button type="submit" >Add note</button>
     </form>
-    <div ng-repeat="marker in markers" ng-click="removeMarker($index)" class="marker" style="left:{{marker.pageX}}px;top:{{marker.pageY}}px;" data-index="{{$index}}">
+    <div ng-repeat="marker in markers" ng-click="removeMarker($index)" class="marker" style="left:{{marker.x}}vw;top:{{marker.y}}vh;" data-index="{{$index}}">
         <div class="note">{{marker.note}}</div>
     </div>
     <img class="theMap" ng-click="addMarker($event)" src="https://github.com/RefactorU/exercise-starters/blob/master/client-js/gold-rush/topo-co.jpg?raw=true">

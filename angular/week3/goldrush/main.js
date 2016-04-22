@@ -6,11 +6,15 @@ var mainController = function($scope){
     $scope.clickSpot = [0,0]
     $scope.markers = []
     $scope.addMarker = function(event){
-        $scope.clickSpot = [event.pageX, event.pageY]
         // console.log(event.pageY)
         // console.log(event.pageX)
         $scope.addingANote = true
-        $scope.markers.push(event)
+        $scope.clickSpot = {
+            x : event.pageX / document.body.clientWidth * 100,
+            y : event.pageY / document.body.clientHeight * 100
+        }
+        $scope.markers.push($scope.clickSpot)
+        console.log($scope.clickSpot)
         $scope.whichNote = $scope.markers.length -1
     }
     $scope.addNote = function(){
