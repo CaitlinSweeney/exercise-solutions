@@ -12,7 +12,6 @@ var mainController = function($scope){
             y : event.pageY / document.body.clientHeight * 100
         }
         $scope.markers.push($scope.clickSpot)
-        $scope.whichNote = $scope.markers.length -1
         $scope.addingANote = true
     }
     $scope.addNote = function(){
@@ -22,7 +21,6 @@ var mainController = function($scope){
     }
 
     $scope.removeMarker = function(index){
-        console.log(index)
         $scope.markers.splice(index, 1)
     }
 }
